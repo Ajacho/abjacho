@@ -37,7 +37,7 @@ export const Projects = () => {
     return (
         <section id="projects" className="min-h-screen flex items-center justify-center">
             <div className="max-w-4xl mx-auto px-6">
-                <h1 className="text-4xl font-bold text-[##F6ECE3] text-center">Projects</h1>
+                <h1 className="text-4xl font-bold text-[##F6ECE3] text-center italic">Projects</h1>
                 <div className="relative w-full mt-10">
                     <div className="relative h-100 w-150 overflow-hidden rounded-lg md:h-96">
                         {spotlightProjects.map((slide, index) => (

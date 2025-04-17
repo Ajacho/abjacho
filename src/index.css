@@ -2,7 +2,10 @@
 html, body {
   margin: 0;
   padding: 0;
+  /* font-family: "montserrat", sans-serif; */
   font-family: "space grotesk", sans-serif;
-  background: linear-gradient(to bottom left, #00408C, #00A3E0) !important;
+
+  background: linear-gradient(to bottom left, #063064, #0a192fd7) !important;
+
   color: #F6ECE3;
 }

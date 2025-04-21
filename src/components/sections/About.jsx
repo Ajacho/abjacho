@@ -8,7 +8,7 @@ export const About = () => {
         "C#",
         "JavaScript",
         "WordPress",
-        "Vite"
+        "Azure"
     ];
 
 

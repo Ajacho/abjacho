@@ -5,9 +5,13 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "/abjacho/",
+  server: {
+    port: 5173,
+    open: true,
+  },
   plugins: [
     react(),
     tailwindcss(),
-  ],
-  base: "/abjacho",
+  ]
 })

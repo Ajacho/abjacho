@@ -6,24 +6,17 @@ export const Projects = () => {
     const [activeSlide, setActiveSlide] = useState(0);
 
     const spotlightProjects = [
-        "UxCheckmate", {
+        {
             id: 1,
-            src: "/src/assets/CS462_Final_Project.png", 
+            src: "./uxCheckmate.png", 
             alt: "Project 1",  
-            title: "CS462 Final Project",
+            title: "UxCheckmate Final Project",
             desc: "Final project for CS462, a web application that allows users to analized their website.",
             link: "https://github.com/rausches/deep-blue-repo"
 
         },
-        // "something else", {
-        //     id: 2,
-        //     src: "/src/assets/CS462_Final_Project.png",
-        //     alt: "Project 2",
-        //     title: "CS462 Final Project",
-        //     desc: "Final project for CS462, a web application that allows users to analized their website.",
-        //     link: "https://github.com/rausches/deep-blue-repo"
+        // Add more objects for additional projects
 
-        // },
     ];
 
     const handlePrev = () => {
@@ -37,33 +30,36 @@ export const Projects = () => {
     return (
         <section id="projects" className="min-h-screen flex items-center justify-center">
             <div className="max-w-4xl mx-auto px-6">
-                <h1 className="text-4xl font-bold text-[##F6ECE3] text-center italic">Projects</h1>
+                <h1 className="text-4xl font-bold text-[##F6ECE3] text-left italic">Pet projects</h1>
+                <div className="border-t border-[#F6ECE3] transition-all duration-300 my-10"></div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="relative w-full mt-10">
-                    <div className="relative h-100 w-150 overflow-hidden rounded-lg md:h-96">
+                    {/* Carousel Container */}
+                    <div className="relative overflow-hidden rounded-lg h-[500px] w-[500px]">
                         {spotlightProjects.map((slide, index) => (
-                            <div
-                                key={slide.id}
-                                className={`absolute inset-0 transition-opacity duration-700 ${
-                                    index === activeSlide ? "opacity-100" : "opacity-0"
-                                }`}
-                            > 
-                                <img
-                                    src={slide.src}
-                                    alt={slide.alt}
-                                    className="block w-full h-full object-cover"
-                                /> 
-                                {/* Slide Content */}
-                                <div className="absolute inset-0 flex items-center justify-center bg-grey bg-opacity-50 p-4">
-                                    <div className="text-white text-center">
-                                        <h2 className="text-2xl font-bold">{slide.title}</h2>
-                                        <p className="mt-2">{slide.desc}</p>
-                                        <a href={slide.link} target="_blank" rel="noopener noreferrer" className="mt-4 inline-block px-4 py-2 text-black rounded hover:bg-yellow-500">
-                                            <FaGithub size={30} className="text-gray-800 hover:text-black transition-colors" />
-                                        </a>
+                                <div
+                                    key={slide.id}
+                                    className={`absolute inset-0 transition-opacity duration-700  ${
+                                        index === activeSlide ? "opacity-100" : "opacity-0"
+                                    }`}
+                                > 
+                                    <img
+                                        src={slide.src}
+                                        alt={slide.alt}
+                                        className="relative h-[500px] w-[500px] object-cover rounded-lg"
+                                    /> 
+                                    {/* Slide Content */}
+                                    <div className="absolute inset-0 flex items-center justify-center bg-grey bg-opacity-50 p-4">
+                                        <div className="text-white text-center">
+                                            <h2 className="text-2xl font-bold">{slide.title}</h2>
+                                            <p className="mt-2">{slide.desc}</p>
+                                            <a href={slide.link} target="_blank" rel="noopener noreferrer" className="mt-4 inline-block px-4 py-2 text-black rounded hover:bg-yellow-500">
+                                                <FaGithub size={30} className="text-gray-800 hover:text-black transition-colors" />
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        ))}
+                            ))}
                     </div>
 
                     {/* Navigation Buttons */}
@@ -113,6 +109,7 @@ export const Projects = () => {
                             </svg>
                         </span>
                     </button>
+                </div>
                 </div>
             </div>
         </section>

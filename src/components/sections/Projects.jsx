@@ -8,10 +8,10 @@ export const Projects = () => {
     const spotlightProjects = [
         {
             id: 1,
-            src: "./uxCheckmate.png", 
+            src: "./UxCheckmate_webapp.png", 
             alt: "Project 1",  
-            title: "UxCheckmate Final Project",
-            desc: "Final project for CS462, a web application that allows users to analized their website.",
+            title: "UxCheckmate",
+            desc: "An accessible web checker application that analyzes web pages for accessibility issues, providing detailed reports and actionable suggestions for improvement.",
             link: "https://github.com/rausches/deep-blue-repo"
 
         },
@@ -30,36 +30,45 @@ export const Projects = () => {
     return (
         <section id="projects" className="min-h-screen flex items-center justify-center">
             <div className="max-w-4xl mx-auto px-6">
-                <h1 className="text-4xl font-bold text-[##F6ECE3] text-left italic">Pet projects</h1>
+                <h1 className="text-4xl font-bold text-[##F6ECE3] text-left italic">Project Showcase</h1>
                 <div className="border-t border-[#F6ECE3] transition-all duration-300 my-10"></div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <p className="text-text-[##F6ECE3] mt-4">                   
+                    Explore a selection of my personal and technical projects where I apply my skills in software development, 
+                    problem-solving, and creative design. Each project highlights my growth, learning, and passion for technology.
+                </p>
+                {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6"> */}
                 <div className="relative w-full mt-10">
                     {/* Carousel Container */}
-                    <div className="relative overflow-hidden rounded-lg h-[500px] w-[500px]">
-                        {spotlightProjects.map((slide, index) => (
-                                <div
-                                    key={slide.id}
-                                    className={`absolute inset-0 transition-opacity duration-700  ${
-                                        index === activeSlide ? "opacity-100" : "opacity-0"
-                                    }`}
-                                > 
-                                    <img
-                                        src={slide.src}
-                                        alt={slide.alt}
-                                        className="relative h-[500px] w-[500px] object-cover rounded-lg"
-                                    /> 
-                                    {/* Slide Content */}
-                                    <div className="absolute inset-0 flex items-center justify-center bg-grey bg-opacity-50 p-4">
-                                        <div className="text-white text-center">
-                                            <h2 className="text-2xl font-bold">{slide.title}</h2>
-                                            <p className="mt-2">{slide.desc}</p>
-                                            <a href={slide.link} target="_blank" rel="noopener noreferrer" className="mt-4 inline-block px-4 py-2 text-black rounded hover:bg-yellow-500">
-                                                <FaGithub size={30} className="text-gray-800 hover:text-black transition-colors" />
-                                            </a>
+                    <div className="flex justify-center">
+                        <div className="relative overflow-hidden h-[400px] w-[700px] rounded-lg mt-10 mb-10">
+                            {spotlightProjects.map((slide, index) => (
+                                    <div
+                                        key={slide.id}
+                                        className={`absolute inset-0 transition-opacity duration-700  ${
+                                            index === activeSlide ? "opacity-100" : "opacity-0"
+                                        }`}
+                                    > 
+                                        <img
+                                            src={slide.src}
+                                            alt={slide.alt}
+                                            className="relative object-cover rounded-lg"
+                                        /> 
+                                        {/* Slide Content */}
+                                        <div className="absolute h-[400px] inset-0 flex items-center justify-center p-4">
+                                            <div className="absolute bottom-0 text-white text-center bg-[linear-gradient(to_bottom_left,_#063064,_#0a192fd7)] rounded-lg">
+                                                <h2 className="text-2xl text-yellow-400 font-bold flex gap-2 items-center justify-center">
+                                                    {slide.title} 
+                                                    <a href={slide.link} target="_blank" rel="noopener noreferrer">
+                                                    <FaGithub size={30} className="text-white hover:text-yellow-400 transition-colors" />
+                                                    </a>
+                                                </h2>
+                                                <p className="mt-2">{slide.desc}</p>
+
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            ))}
+                                ))}
+                        </div>
                     </div>
 
                     {/* Navigation Buttons */}
@@ -69,7 +78,7 @@ export const Projects = () => {
                         className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                         aria-label="Previous Slide"
                     >
-                        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-800 group-hover:bg-gray-900">
+                        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-yellow-400 ">
                             <svg
                                 className="w-4 h-4 text-white"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -92,7 +101,7 @@ export const Projects = () => {
                         className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                         aria-label="Next Slide"
                     >
-                        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-800 group-hover:bg-gray-900">
+                        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-yellow-400">
                             <svg
                                 className="w-4 h-4 text-white"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -110,7 +119,7 @@ export const Projects = () => {
                         </span>
                     </button>
                 </div>
-                </div>
+                {/* </div> */}
             </div>
         </section>
     );

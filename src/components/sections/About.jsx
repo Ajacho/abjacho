@@ -3,7 +3,7 @@ import { CheckCheck } from "lucide-react";
 export const About = () => {
 
     const techSkills = [
-        "ASP.NET Core MVC",
+        "ASP.NET Core",
         "React.js",
         "C#",
         "JavaScript",

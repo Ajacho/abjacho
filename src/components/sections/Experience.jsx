@@ -2,7 +2,7 @@ import { CheckCheck } from "lucide-react";
 import { useState } from "react";
 
 export const Experience = () => {
-    const [activeTab, setActiveTab] = useState("OIED Student Work Assistant");
+    const [activeTab, setActiveTab] = useState("OIED Student Assistant");
 
     const jobExperience = [
         {
@@ -61,6 +61,7 @@ export const Experience = () => {
                             </button>
                         ))}
                 </div>
+                
                 <div className="mt-6">
                     {jobExperience
             .map((tab) => (

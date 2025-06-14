@@ -15,7 +15,7 @@ export const NavBar = () => {
 
                 {/* Desktop Nav */}
                 <ul className="hidden md:flex gap-6 ">
-                    {["Home", "About", "Experience", "Projects"].map((item) => (
+                    {["Home", "Experience", "Projects"].map((item) => (
 
                         <li key={item}>
                             <Link to={item.toLowerCase()} smooth={true} duration={500} className="cursor-pointer hover:text-gray-900">{item}</Link>
@@ -32,7 +32,7 @@ export const NavBar = () => {
                 {/* Mobile Nav Menu*/}
                 {isOpen && (<div className="md:hidden">
                     <ul className="flex flex-col gap-4 items-center">
-                        {["Home", "About", "Experience", "Projects"].map((item) => (
+                        {["Home", "Experience", "Projects"].map((item) => (
                             <li key={item}>
                                 <Link to={item.toLowerCase()} smooth={true} duration={1000} onClick={() => setIsOpen(false)} className="cursor-pointer hover:text-blue-900">{item}</Link>
                             </li>

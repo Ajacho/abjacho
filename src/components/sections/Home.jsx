@@ -23,22 +23,11 @@ export const Home = () => {
             <div className="flex flex-col items-center justify-center">
                 <div className="about-image">
                     {/* Picture of me */}
-                    <img src="./andrea.jpg" alt="Andrea Jacho" className="rounded-full" />
-                </div>
-                <div>
-                    <p className="text-[##F6ECE3] mt-4">
-                    {String.fromCodePoint("0x1f4bb")} Technologies I have been working
-                    with:  
-                    </p>              
-                        <div className="grid grid-cols-2 gap-4 mt-4">
-                        {techSkills.map((skill) => (
-                        <li key={skill} className="list-none">
-                        <CheckCheck className="text-yellow-400 inline-block mr-2" />
-                        {skill}
-                        </li>
-                        ))}
-                        </div>
-                    <br/>
+                    <img
+                        src="./andrea.jpg"
+                        alt="Andrea Jacho"
+                        className="rounded-full transition-all"
+                    />
                 </div>
             </div>
             {/* col-2 */}
@@ -69,7 +58,24 @@ export const Home = () => {
                 </a>
                 </button>
             </div>
-          {/* <div className="grid grid-cols-1 gap-4">
+            {/* <div>
+                <p className="text-[##F6ECE3] mt-4">
+                {String.fromCodePoint("0x1f4bb")} Technologies I have been working
+                with:  
+                </p>              
+                    <div className="grid grid-cols-2 gap-4 mt-4">
+                    {techSkills.map((skill) => (
+                    <li key={skill} className="list-none">
+                    <CheckCheck className="text-yellow-400 inline-block mr-2" />
+                    {skill}
+                    </li>
+                    ))}
+                    </div>
+                <br/>
+            </div> */}
+          
+        </div>
+                  <div className="grid grid-cols-1 gap-4">
             <p className="text-text-[##F6ECE3] mt-4">
             Beyond coding, I stay engaged by following tech influencers, reading
             cognitive science books, and capturing Oregon’s landscapes through
@@ -85,11 +91,10 @@ export const Home = () => {
             </a>
             . When I’m not immersed in tech, you’ll likely find me at the gym.
             </p>
-          </div> */}
-          
-        </div>
+          </div>
       </div>
     </section>
+    
   );
 };
 export default Home;

@@ -12,13 +12,20 @@ export const Projects = () => {
         },
         {
             id: 2,
-            src: "./Portfolio.png",
-            alt: "Portfolio website screenshot",
-            title: "Portfolio Website",
-            desc: "A personal website showcasing my skills, projects, and journey in software development.",
-            link: "https://example.com"
-        },
-        // Add more projects here
+            src: "./restful_web_service.png",
+            alt: "Restful Web Service",
+            title: "Restful Web Service",
+            desc: "A hands-on project where I designed and built a simple RESTful web service, gradually extending it to include concepts like microservices, load balancing, and distributed system design.",
+            link: "https://github.com/wou-cs/hw03-writing-a-simple-restful-web-service-Ajacho"
+        }
+        // {
+        //     id: 2,
+        //     src: "./restful_web_service.png",
+        //     alt: "Portfolio website screenshot",
+        //     title: "Portfolio Website",
+        //     desc: "A personal website showcasing my skills, projects, and journey in software development.",
+        //     link: "https://example.com"
+        // },
     ];
 
     return (
@@ -34,7 +41,7 @@ export const Projects = () => {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {spotlightProjects.map((project) => (
-                        <div key={project.id} className=" rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                        <div key={project.id} className=" rounded-lg shadow-md hover:shadow-white hover:shadow-xl transition-shadow  duration-300 flex flex-col">
                             <img src={project.src} alt={project.alt} className="rounded-t-lg h-40 object-cover w-full" />
                             <div className="p-4 flex flex-col flex-grow">
                                 <h2 className="text-xl text-yellow-400 font-semibold mb-2 flex justify-between items-center">

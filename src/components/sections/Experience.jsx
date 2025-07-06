@@ -11,11 +11,10 @@ export const Experience = () => {
             duration: "September 2023 - June 2025",
             desc: 
             [
-            <>Developed and maintained the <a className="text-yellow-400 font-bold" href="https://wou.edu/international/" target="_blank" rel="noopener noreferrer"> OIED Website</a> using WordPress, enhancing front-end features, themes, plugins, and custom coding for improved user experience."
+            <>Developed and maintained the <a className="text-yellow-400 font-bold" href="https://wou.edu/international/" target="_blank" rel="noopener noreferrer"> OIED department website</a> using WordPress, customizing themes, plugins, and front-end features to enhance UX."
             </>,
-            "Leveraged advanced Excel features (formulas, pivot tables, data validation) to build a dynamic tracking system, providing reports on 60-140 student applications per term",
-            "Supported international partnerships by managing sensitive documents and contracts, ensuring accuracy and timely execution of agreements.",
-            "Authored a comprehensive Standard Operating Procedure (SOP) to guide future workers, ensuring consistency in website updates, data tracking, and document handling."
+            "Built a dynamic application tracking system using advanced Excel (formulas, pivot tables, data validation) to generate reports on 60–140 student records per term.",
+            "Authored a comprehensive Standard Operating Procedure (SOP) to streamline workflows for website updates, data handling, and student tracking."
         ]
         },
         {
@@ -24,7 +23,6 @@ export const Experience = () => {
             duration: "September 2024 - June 2025",
             desc: 
             ["Provide personalized tutoring sessions, helping students grasp complex concepts and develop independent problem-solving skills.",
-            "Offer timely follow-up support via email to ensure continued progress and assignment completion.",
             "Serve as a grader for computer science courses, evaluating assignments and providing constructive feedback to support student learning."
             ]    
         },
@@ -35,7 +33,7 @@ export const Experience = () => {
             desc: [ 
               "Managed financial aid programs for students and parents, translating materials and utilizing bilingual communication to support diverse communities.",
               "Learned and applied WordPress to update and maintain the college's bilingual outreach website, ensuring content was accessible and up to date.",
-              <>Led the <a className="text-yellow-400 font-bold" href="https://opencampus.oregonstate.edu/juntos" target="_blank" rel="noopener noreferrer">OSU Juntos program</a>, organizing educational sessions and representing OCCC at community events to increase community engagement and program visibility.</>
+              <>Led the <a className="text-yellow-400 font-bold" href="https://opencampus.oregonstate.edu/juntos" target="_blank" rel="noopener noreferrer">OSU Juntos program</a>, organizing educational events and community outreach, sharpening project management and coordination skills transferable to software project delivery and teamwork.</>
             ]
             
         },

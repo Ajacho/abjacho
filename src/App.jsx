@@ -1,24 +1,29 @@
-import { NavBar } from './components/NavBar'
-import { Home } from './components/sections/Home'
-import { Experience } from './components/sections/Experience'
-import { Projects } from './components/sections/Projects'
-import { Footer } from './components/Footer'
-import './index.css'
+import { NavBar } from "./components/NavBar";
+import { Home } from "./components/sections/Home";
+import { Experience } from "./components/sections/Experience";
+import { Projects } from "./components/sections/Projects";
+import { Footer } from "./components/Footer";
+import { Animation } from "./components/Animation";
+import "./index.css";
 
 function App() {
   return (
-    <div className='min-h-screen'>
+    <div className="min-h-screen flex flex-col">
       <NavBar />
-      <main className='flex-grow'>
-        <Home />
-        <Experience />
-        <Projects />
+      <main className="flex-grow space-y-10">
+        <Animation>
+          <Home />
+        </Animation>
+        <Animation delay={0.1}>
+          <Experience />
+        </Animation>
+        <Animation delay={0.2}>
+          <Projects />
+        </Animation>
       </main>
-      <Footer/>
+      <Footer />
     </div>
-    
-    
-  )
+  );
 }
 
-export default App
+export default App;

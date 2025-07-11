@@ -8,7 +8,7 @@ export default function WinkFace() {
         animate={{ opacity: [1, 0, 1] }}
         transition={{ duration: 0.5, repeat: Infinity, repeatDelay: 1.5 }}
       >
-      :)
+        :)
       </motion.span>
       <span></span>
     </div>

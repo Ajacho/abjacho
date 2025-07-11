@@ -12,7 +12,7 @@ export const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             {/* col-1 */}
             <div className="hidden md:flex flex flex-col items-center justify-center">
-              <div className="about-image">
+              <div className="about-image ">
                 {/* Picture of me */}
                 <img
                   src="./andrea.jpg"

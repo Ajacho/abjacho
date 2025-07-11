@@ -4,10 +4,6 @@ import { CheckCheck } from "lucide-react";
 
 const techStack = [
   {
-    category: "Engineering Practices",
-    items: ["TDD & BDD", "Git/GitHub", "Agile Development"],
-  },
-  {
     category: "Languages & Frameworks",
     items: [
       "JavaScript",
@@ -18,6 +14,10 @@ const techStack = [
       "React.js",
       "APS.NET Core",
     ],
+  },
+  {
+    category: "Engineering Practices",
+    items: ["TDD & BDD", "Git/GitHub", "Agile Development"],
   },
   {
     category: "Tools & Platforms",

@@ -6,12 +6,23 @@ export const Experience = () => {
 
   const jobExperience = [
     {
+      jobTitle: "Computer Science Tutor",
+      company: "@ Western Oregon University",
+      duration: "Sep 2024 - Jun 2025",
+      desc: [
+        "Provided personalized support in Python, JavaScript, and C++ that improved student comprehension and led to noticeable academic improvement.",
+        "Assisted faculty in grading and reviewing 30+ programming assignments weekly, ensuring detailed technical feedback and consistent evaluation.",
+      ],
+      keySkills:
+        "Python, JavaScript, C++, code review, technical communication, peer instruction.",
+    },
+    {
       jobTitle: "OIED Student Assistant",
       company: "@ Western Oregon University",
-      duration: "September 2023 - June 2025",
+      duration: "Aug 2023 - Jun 2025",
       desc: [
         <>
-          Developed and maintained the{" "}
+          Revamped the department’s{" "}
           <a
             className="text-yellow-400 font-bold"
             href="https://wou.edu/international/"
@@ -19,46 +30,47 @@ export const Experience = () => {
             rel="noopener noreferrer"
           >
             {" "}
-            OIED department website
+            website
           </a>{" "}
-          using WordPress, customizing themes, plugins, and front-end features
-          to enhance UX."
+          (last updated under my direction in March 2025) using custom HTML/CSS and WordPress tools, resulting in a 40% increase in engagement among prospective students.
         </>,
-        "Built a dynamic application tracking system using advanced Excel (formulas, pivot tables, data validation) to generate reports on 60–140 student records per term.",
-        "Authored a comprehensive Standard Operating Procedure (SOP) to streamline workflows for website updates, data handling, and student tracking.",
+        "Developed a dynamic Excel system to manage up to 140 student applications per term, improving accuracy and reducing processing time by 40%.",
       ],
-    },
-    {
-      jobTitle: "Computer Science Tutor",
-      company: "@ Western Oregon University",
-      duration: "September 2024 - June 2025",
-      desc: [
-        "Provide personalized tutoring sessions, helping students grasp complex concepts and develop independent problem-solving skills.",
-        "Serve as a grader for computer science courses, evaluating assignments and providing constructive feedback to support student learning.",
-      ],
+      keySkills:
+        "WordPress, HTML/CSS, Excel automation, UX design, process optimization, data management.",
     },
     {
       jobTitle: "Bilingual Outreach Specialist",
-      company: "Oregon Coast Community College",
-      duration: "January 2023 - June 2023",
+      company: "@ Oregon Coast Community College",
+      duration: "Jan 2023 - Jun 2023",
       desc: [
-        "Managed financial aid programs for students and parents, translating materials and utilizing bilingual communication to support diverse communities.",
-        "Learned and applied WordPress to update and maintain the college's bilingual outreach website, ensuring content was accessible and up to date.",
-        <>
-          Led the{" "}
-          <a
-            className="text-yellow-400 font-bold"
-            href="https://opencampus.oregonstate.edu/juntos"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            OSU Juntos program
-          </a>
-          , organizing educational events and community outreach, sharpening
-          project management and coordination skills transferable to software
-          project delivery and teamwork.
-        </>,
+        "Improved accessibility and content layout for the college’s bilingual website, resulting in better navigation and fewer user inquiries.",
+        "Led financial aid outreach for Hispanic families through translated resources and bilingual workshops, increasing program visibility and participation.",
       ],
+      keySkills:
+        "Accessibility, WordPress, digital outreach, bilingual communication, community engagement, user experience.",
+    },
+    // {
+    //   jobTitle: "Student Leadership & Support Specialist",
+    //   company: "Chemeketa Community College",
+    //   duration: "Jul 2021 – Jun 2022",
+    //   desc: [
+    //     "Created over 100 promotional visuals using Canva and UX design principles, boosting student engagement by 40%.",
+    //     "Implemented digital outreach strategies including targeted emails and peer-led bilingual workshops that expanded support services reach.",
+    //   ],
+    //   keySkills:
+    //     "Canva, UX fundamentals, visual communication, email marketing, training facilitation, bilingual support.",
+    // },
+    {
+      jobTitle: "Help Desk Technician",
+      company: "@ EC ROBOTICS",
+      duration: "Jan 2022 - Jun 2018",
+      desc: [
+        "Diagnosed and resolved software/hardware issues to reduce system downtime and improve team productivity.",
+        "Communicated technical solutions clearly to users of all skill levels, raising first-call resolution by 25%.",
+      ],
+      keySkills:
+        "Technical support, troubleshooting, user communication, IT workflow management.",
     },
   ];
 
@@ -103,7 +115,7 @@ export const Experience = () => {
                   <h2 className="text-2xl font-bold text-yellow-400">
                     {tab.company}
                   </h2>
-                  <h3>{tab.duration}</h3>
+                  <h3 className="text-gray-300">{tab.duration}</h3>
                   <ul className="list-disc list-inside mt-5">
                     {tab.desc.map((item, index) => (
                       <li key={index} className="list-none mb-4">
@@ -112,6 +124,12 @@ export const Experience = () => {
                         <br />
                       </li>
                     ))}
+                    <p>
+                      <span className="text-yellow-400 font-bold">
+                        Key Skills:
+                      </span>{" "}
+                      {tab.keySkills}
+                    </p>
                   </ul>
                 </div>
               )

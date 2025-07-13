@@ -12,20 +12,12 @@ export const Projects = () => {
     },
     {
       id: 2,
-      src: "./restful_web_service.png",
-      alt: "Restful Web Service",
-      title: "Restful Web Service",
-      desc: "A hands-on project where I designed and built a simple RESTful web service, gradually extending it to include concepts like microservices, load balancing, and distributed system design.",
-      link: "https://github.com/wou-cs/hw03-writing-a-simple-restful-web-service-Ajacho",
-    },
-    // {
-    //     id: 2,
-    //     src: "./restful_web_service.png",
-    //     alt: "Portfolio website screenshot",
-    //     title: "Portfolio Website",
-    //     desc: "A personal website showcasing my skills, projects, and journey in software development.",
-    //     link: "https://example.com"
-    // },
+      src: "./random_code_img.jpeg",
+      alt: "CS through college",
+      title: "CS through college",
+      desc: "My CS projects from college, organized by semester and topic (still in progress).",
+      link: "https://github.com/Ajacho/cs-through-college"
+    }
   ];
 
   return (

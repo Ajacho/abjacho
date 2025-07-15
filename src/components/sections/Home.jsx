@@ -3,12 +3,9 @@ import { AccordionTable, techStack } from "../skills";
 
 export const Home = () => {
   return (
-    <section
-      id="home"
-      className="min-h-screen flex items-center justify-center"
-    >
-      <div className="max-w-4xl mx-auto px-6">
-        <div className="transition-all duration-300 my-10 mt-30">
+    <section id="home" className="min-h-screen flex items-center justify-center">
+      <div className="max-w-4xl mx-auto ">
+        <div className="transition-all duration-300 my-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             {/* col-1 */}
             <div className="hidden md:flex flex flex-col items-center justify-center">
@@ -66,7 +63,9 @@ export const Home = () => {
                 {String.fromCodePoint("0x1f4bb")} Technologies I've been working
                 with:
               </p>
-              <AccordionTable techStack={techStack} />
+              <div className="h-60 overflow-y-auto scrollbar scrollbar-thumb-yellow-500 scrollbar-track-pink-200">
+                <AccordionTable techStack={techStack} />
+              </div>
 
               <div className="block md:hidden gap-4">
                 <p className="text-text-[##F6ECE3] mt-4">

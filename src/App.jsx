@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col">
       <NavBar />
-      <main className="flex-grow space-y-10">
+      <main className="flex-grow space-y-10 pt-15">
         <Animation>
           <Home />
         </Animation>

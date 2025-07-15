@@ -28,6 +28,7 @@ export const NavBar = () => {
   ];
 
   return (
+    <section id="navbar">
     <nav className="fixed top-0 left-0 z-50 w-full shadow-md bg-gradient-to-l from-[#063064] to-[#0a192fd7]">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         <a href="#" className="text-2xl font-bold hover:text-yellow-400 text-lg">
@@ -70,6 +71,7 @@ export const NavBar = () => {
         </ul>
       </div>
     </nav>
+    </section>
   );
 };
 

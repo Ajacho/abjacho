@@ -6,6 +6,7 @@ export const Experience = () => {
 
   const jobExperience = [
     {
+      id: 0.1,
       jobTitle: "Computer Science Tutor",
       company: "@ Western Oregon University",
       duration: "Sep 2024 - Jun 2025",
@@ -17,6 +18,7 @@ export const Experience = () => {
         "Python, JavaScript, C++, code review, technical communication, peer instruction.",
     },
     {
+      id: 0.2,
       jobTitle: "OIED Student Assistant",
       company: "@ Western Oregon University",
       duration: "Aug 2023 - Jun 2025",
@@ -40,6 +42,7 @@ export const Experience = () => {
         "WordPress, HTML/CSS, Excel automation, UX design, process optimization, data management.",
     },
     {
+      id: 0.3,
       jobTitle: "Bilingual Outreach Specialist",
       company: "@ Oregon Coast Community College",
       duration: "Jan 2023 - Jun 2023",
@@ -62,9 +65,10 @@ export const Experience = () => {
     //     "Canva, UX fundamentals, visual communication, email marketing, training facilitation, bilingual support.",
     // },
     {
+      id: 0.4,
       jobTitle: "Help Desk Technician",
       company: "@ EC ROBOTICS",
-      duration: "Jan 2022 - Jun 2018",
+      duration: "Jun 2018 - Jan 2022",
       desc: [
         "Diagnosed and resolved software/hardware issues to reduce system downtime and improve team productivity.",
         "Communicated technical solutions clearly to users of all skill levels, raising first-call resolution by 25%.",
@@ -102,7 +106,8 @@ export const Experience = () => {
                                 }`}
               aria-selected={activeTab === tab.jobTitle}
             >
-              <span className="mr-2">{tab.jobTitle}</span>
+              <span className="mr-2 hidden md:inline">{tab.jobTitle}</span>
+              <span className="inline md:hidden">{tab.id}</span>
             </button>
           ))}
         </div>
@@ -112,9 +117,11 @@ export const Experience = () => {
             (tab) =>
               activeTab === tab.jobTitle && (
                 <div key={tab.jobTitle} className="text-[##F6ECE3]">
+                  <h2 className="inline md:hidden text-2xl font-bold">{tab.jobTitle}</h2>
                   <h2 className="text-2xl font-bold text-yellow-400">
                     {tab.company}
                   </h2>
+
                   <h3 className="text-gray-300">{tab.duration}</h3>
                   <ul className="list-disc list-inside mt-5">
                     {tab.desc.map((item, index) => (

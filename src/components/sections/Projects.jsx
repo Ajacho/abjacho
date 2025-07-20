@@ -17,6 +17,14 @@ export const Projects = () => {
       title: "CS through college",
       desc: "My CS projects from college, organized by semester and topic (still in progress).",
       link: "https://github.com/Ajacho/cs-through-college"
+    },
+    {
+      id: 3,
+      src: "./lemon_shrak.png",
+      alt: "Lemon Shark",
+      title: "Lemon Shark",
+      desc: "Lemon Shark is a 2D underwater game built with JavaScript and Phaser, where you eat fish to grow and dodge bombs to survive.",
+      link: "https://github.com/Ajacho/lemon-shark"
     }
   ];
 

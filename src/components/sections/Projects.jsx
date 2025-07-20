@@ -20,7 +20,7 @@ export const Projects = () => {
     },
     {
       id: 3,
-      src: "./lemon_shrak.png",
+      src: "./lemon_shark.png",
       alt: "Lemon Shark",
       title: "Lemon Shark",
       desc: "Lemon Shark is a 2D underwater game built with JavaScript and Phaser, where you eat fish to grow and dodge bombs to survive.",

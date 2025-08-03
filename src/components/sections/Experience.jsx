@@ -2,7 +2,7 @@ import { CheckCheck } from "lucide-react";
 import { useState } from "react";
 
 export const Experience = () => {
-  const [activeTab, setActiveTab] = useState("OIED Student Assistant");
+  const [activeTab, setActiveTab] = useState("Computer Science Tutor");
 
   const jobExperience = [
     {

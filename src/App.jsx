@@ -1,4 +1,5 @@
 import { NavBar } from "./components/NavBar";
+import { Landing } from "./components/sections/landing";
 import { Home } from "./components/sections/Home";
 import { Experience } from "./components/sections/Experience";
 import { Projects } from "./components/sections/Projects";
@@ -11,6 +12,9 @@ function App() {
     <div className="min-h-screen flex flex-col">
       <NavBar />
       <main className="flex-grow space-y-10 pt-15">
+        <Animation>
+          <Landing />
+        </Animation>
         <Animation>
           <Home />
         </Animation>

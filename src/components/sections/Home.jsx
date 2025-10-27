@@ -1,9 +1,12 @@
+import { TypeAnimation } from "react-type-animation";
 import WinkFace from "../WinkFace";
 import { AccordionTable, techStack } from "../skills";
 
 export const Home = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center">
+
+      
       <div className="max-w-4xl mx-auto ">
         <div className="transition-all duration-300 my-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -39,9 +42,20 @@ export const Home = () => {
             {/* col-2 */}
             <div className="max-w-4xl mx-auto px-6 mb-10">
               <h1 className="text-4xl font-bold">
+
+
                 <span className="italic">Hola</span> <WinkFace /> <br /> I'm
                 Andrea Jacho
               </h1>
+
+              <h1>
+              {/* <TypeAnimation>
+                
+              </TypeAnimation> */}
+
+
+              </h1>
+
               <p className="mt-4">
                 I’m a recent Computer Science graduate from{" "}
                 <a
@@ -89,6 +103,9 @@ export const Home = () => {
           </div>
         </div>
       </div>
+
+
+
     </section>
   );
 };

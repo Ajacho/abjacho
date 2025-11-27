@@ -1,19 +1,29 @@
 import { TypeAnimation } from "react-type-animation";
-import WinkFace from "../WinkFace";
-import { AccordionTable, techStack } from "../skills";
+import { CheckCheck } from "lucide-react";
 
-export const Home = () => {
+export const About = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center">
-
-      
+    <section
+      id="about"
+      className="min-h-screen flex items-center justify-center"
+    >
       <div className="max-w-4xl mx-auto ">
+        <h1 className="text-4xl font-bold text-yellow-400 italic">
+          <TypeAnimation
+            sequence={["About Me", 1000]}
+            speed={{ type: "keyStrokeDelayInMs", value: 250 }}
+            repeat={Infinity}
+          />
+        </h1>
+
+        <div className="border-t border-[#F6ECE3] transition-all duration-300 my-10" />
+
         <div className="transition-all duration-300 my-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             {/* col-1 */}
             <div className="hidden md:flex flex flex-col items-center justify-center">
+              {/* Picture of me */}
               <div className="about-image ">
-                {/* Picture of me */}
                 <img
                   src="./andrea.jpg"
                   alt="Andrea Jacho"
@@ -22,9 +32,8 @@ export const Home = () => {
               </div>
               <div className="max-w-4xl mx-auto px-6 mb-10 grid grid-cols-1 gap-4">
                 <p className="text-text-[##F6ECE3] mt-4">
-                  Beyond coding, I stay engaged by following tech influencers,
-                  reading cognitive science books, and capturing Oregon’s
-                  landscapes through photography and sharing them on
+                  Beyond coding, I capture Oregon’s landscapes through
+                  photography and sharing them on
                   <a
                     className="text-yellow-400 font-bold"
                     href="https://www.pinterest.com/abjacho"
@@ -41,19 +50,13 @@ export const Home = () => {
             </div>
             {/* col-2 */}
             <div className="max-w-4xl mx-auto px-6 mb-10">
-              <h1 className="text-4xl font-bold">
-
-
-                <span className="italic">Hola</span> <WinkFace /> <br /> I'm
-                Andrea Jacho
-              </h1>
-
-              <h1>
-              {/* <TypeAnimation>
-                
-              </TypeAnimation> */}
-
-
+              <h1 className="text-4xl font-bold text-yellow-400 mb-4">
+                Andrea B Jacho
+                {/* <TypeAnimation
+                  sequence={["Andrea Jacho", 1000]}
+                  speed={{ type: "keyStrokeDelayInMs", value: 250 }}
+                  repeat={Infinity}
+                /> */}
               </h1>
 
               <p className="mt-4">
@@ -68,7 +71,7 @@ export const Home = () => {
                 </a>{" "}
                 (June 2025), originally from Ecuador and now based in Oregon.
                 I’m passionate about cloud computing, web development, and user
-                interface design, and I’m excited to contribute to and grow
+                interface design, and I’m excited to contribute and grow
                 within the fast-moving world of technology.
               </p>
               {/* Technologies list */}
@@ -77,15 +80,26 @@ export const Home = () => {
                 {String.fromCodePoint("0x1f4bb")} Technologies I've been working
                 with:
               </p>
-              <div className="h-60 overflow-y-auto scrollbar scrollbar-thumb-yellow-500 scrollbar-track-pink-200">
-                <AccordionTable techStack={techStack} />
-              </div>
+
+              <list className="list-disc list-inside mt-4">
+                <li className="mb-4">
+                  <CheckCheck className="text-yellow-400 inline-block mr-2" />
+                  JavaScript (ES6+), React, Node.js
+                </li>
+                <li className="mb-4">
+                  <CheckCheck className="text-yellow-400 inline-block mr-2" />
+                  HTML5, CSS3, Tailwind CSS
+                </li>
+                <li className="mb-4">
+                  <CheckCheck className="text-yellow-400 inline-block mr-2" />
+                  Microsoft Azure
+                </li>
+              </list>
 
               <div className="block md:hidden gap-4">
                 <p className="text-text-[##F6ECE3] mt-4">
-                  Beyond coding, I stay engaged by following tech influencers,
-                  reading cognitive science books, and capturing Oregon’s
-                  landscapes through photography and sharing them on
+                  Beyond coding, I capture Oregon’s landscapes through
+                  photography and sharing them on
                   <a
                     className="text-yellow-400 font-bold"
                     href="https://www.pinterest.com/abjacho"
@@ -103,10 +117,7 @@ export const Home = () => {
           </div>
         </div>
       </div>
-
-
-
     </section>
   );
 };
-export default Home;
+export default About;

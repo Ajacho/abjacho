@@ -14,16 +14,15 @@ export const Landing = () => {
             sequence={[
                 "Hey there :)",
                 1000
-                // "Bienvenido",
-                // 1000,
             ]}
             speed={{ type: "keyStrokeDelayInMs", value: 250 }}
             style={{ fontSize: "2em" }}
             repeat={Infinity}
           />
         </h1>
+
         <h2 className="mt-4 text-white text-2xl  text-center">
-          It's <span className="text-yellow-400">Andrea</span>, a passionate developer with the curiosity to explore new technologies and create innovative solutions.
+          This is <span className="text-yellow-400">Andrea</span>, a passionate developer with the curiosity to explore new technologies and create innovative solutions.
         </h2>
       </div>
     </section>

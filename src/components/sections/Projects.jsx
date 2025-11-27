@@ -1,4 +1,4 @@
-import { FaGithub } from "react-icons/fa";
+import { TypeAnimation } from "react-type-animation";
 
 export const Projects = () => {
   const spotlightProjects = [
@@ -16,7 +16,7 @@ export const Projects = () => {
       alt: "CS through college",
       title: "CS through college",
       desc: "My CS projects from college, organized by semester and topic (still in progress).",
-      link: "https://github.com/Ajacho/cs-through-college"
+      link: "https://github.com/Ajacho/cs-through-college",
     },
     {
       id: 3,
@@ -24,8 +24,8 @@ export const Projects = () => {
       alt: "Lemon Shark",
       title: "Lemon Shark",
       desc: "Lemon Shark is a 2D underwater game built with JavaScript and Phaser, where you eat fish to grow and dodge bombs to survive.",
-      link: "https://github.com/Ajacho/lemon-shark"
-    }
+      link: "https://github.com/Ajacho/lemon-shark",
+    },
   ];
 
   return (
@@ -35,7 +35,13 @@ export const Projects = () => {
     >
       <div className="max-w-6xl mx-auto px-6">
         <div className="max-w-4xl mx-auto px-6">
-          <h1 className="text-4xl font-bold italic">Project Showcase</h1>
+          <h1 className="text-4xl font-bold italic text-yellow-400">
+            <TypeAnimation
+              sequence={["Project Showcase", 1000]}
+              speed={{ type: "keyStrokeDelayInMs", value: 250 }}
+              repeat={Infinity}
+            />
+          </h1>
           <div className="border-t border-[#F6ECE3] my-6" />
           <p className="mb-12">
             Explore a selection of my personal and technical projects,

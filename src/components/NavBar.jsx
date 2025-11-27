@@ -4,7 +4,7 @@ import { Github, Linkedin, Mail } from "lucide-react";
 import "../styles/NavBar.css";
 
 export const NavBar = () => {
-  const desktopNavItems = ["Home", "Experience", "Projects"];
+  const desktopNavItems = ["About", "Experience", "Projects"];
 
   const mobileNavItems = [
     {

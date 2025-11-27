@@ -1,6 +1,6 @@
 import { NavBar } from "./components/NavBar";
 import { Landing } from "./components/sections/landing";
-import { Home } from "./components/sections/Home";
+import { About } from "./components/sections/About";
 import { Experience } from "./components/sections/Experience";
 import { Projects } from "./components/sections/Projects";
 import { Footer } from "./components/Footer";
@@ -16,7 +16,7 @@ function App() {
           <Landing />
         </Animation>
         <Animation>
-          <Home />
+          <About />
         </Animation>
         <Animation delay={0.1}>
           <Experience />

@@ -106,7 +106,7 @@ export const Experience = () => {
             (tab) =>
               activeTab === tab.company && (
                 <div key={tab.id} className="text-[#F6ECE3]">
-                  <h2 className="inline md:hidden text-2xl font-bold">{tab.jobTitle}</h2>
+                  {/* <h2 className="inline md:hidden text-2xl font-bold text-yellow-400">{tab.jobTitle}</h2> */}
                   <h2 className="text-2xl font-bold text-yellow-400">{tab.jobTitle}</h2>
                   <h3 className="text-gray-300">{tab.duration}</h3>
                   <h4 className="text-gray-300 mb-4">{tab.location}</h4>

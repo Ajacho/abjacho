@@ -15,16 +15,16 @@ export const Projects = () => {
       src: "./random_code_img.jpeg",
       alt: "CS through college",
       title: "CS through college",
-      desc: "My CS projects from college, organized by semester and topic (still in progress).",
+      desc: "My CS projects from college, organized by semester and topic.",
       link: "https://github.com/Ajacho/cs-through-college",
     },
     {
       id: 3,
-      src: "./lemon_shark.png",
-      alt: "Lemon Shark",
-      title: "Lemon Shark",
-      desc: "Lemon Shark is a 2D underwater game built with JavaScript and Phaser, where you eat fish to grow and dodge bombs to survive.",
-      link: "https://github.com/Ajacho/lemon-shark",
+      src: "./game.png",
+      alt: "microStudio game",
+      title: "Games with microStudio",
+      desc: "A collection of future games built with microStudio :D",
+      link: "https://microstudio.io/abjacho/",
     },
   ];
 

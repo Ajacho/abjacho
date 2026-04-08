@@ -35,7 +35,7 @@ export const About = () => {
                   Beyond coding, I capture Oregon’s landscapes through
                   photography and sharing them on
                   <a
-                    className="text-yellow-400 font-bold"
+                    className="text-pink-500 font-bold"
                     href="https://www.pinterest.com/abjacho"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -60,7 +60,7 @@ export const About = () => {
               </h1>
 
               <p className="mt-4">
-                I’m a recent Computer Science graduate from{" "}
+                Computer Science graduate from{" "}
                 <a
                   className="text-yellow-400 font-bold"
                   href="https://wou.edu/"
@@ -69,10 +69,12 @@ export const About = () => {
                 >
                   Western Oregon University
                 </a>{" "}
-                (June 2025), originally from Ecuador and now based in Oregon.
-                I’m passionate about cloud computing, web development, and user
-                interface design, and I’m excited to contribute and grow
-                within the fast-moving world of technology.
+                (June 2025), originally from Ecuador and now based in Oregon. I work as a PC Deployment 
+                Technician at Salem Health Hospital, where I support large-scale device 
+                deployments and system configurations.
+
+                I’m passionate about UX design and web development, and I’m eager to apply 
+                my skills while continuing to grow in the tech industry.
               </p>
               {/* Technologies list */}
 
@@ -92,7 +94,7 @@ export const About = () => {
                 </li>
                 <li className="mb-4">
                   <CheckCheck className="text-yellow-400 inline-block mr-2" />
-                  Microsoft Azure
+                  Device imaging & deployment tools
                 </li>
               </list>
 
@@ -101,7 +103,7 @@ export const About = () => {
                   Beyond coding, I capture Oregon’s landscapes through
                   photography and sharing them on
                   <a
-                    className="text-yellow-400 font-bold"
+                    className="text-pink-500 font-bold"
                     href="https://www.pinterest.com/abjacho"
                     target="_blank"
                     rel="noopener noreferrer"

@@ -5,9 +5,25 @@ export const About = () => {
   return (
     <section
       id="about"
-      className="min-h-screen flex items-center justify-center"
+
+      className="min-h-screen flex items-center justify-center  
+      bottom-0 left-0 w-full h-20 
+              bg-gradient-to-t from-transparent to-[#46291d]   
+      "
     >
-      <div className="max-w-4xl mx-auto ">
+
+                    {/* <div
+        class=" bottom-0 left-0 w-full h-20 
+              bg-gradient-to-t from-transparent to-[#46291d]">
+        </div> */}
+
+
+
+
+      <div className="max-w-4xl mx-auto 
+      ">
+
+
         <h1 className="text-4xl font-bold text-yellow-400 italic">
           <TypeAnimation
             sequence={["About Me", 1000]}

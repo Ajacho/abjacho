@@ -11,10 +11,10 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col">
       <NavBar />
-      <main className="flex-grow space-y-10 pt-15">
-        <Animation>
+      <main className="flex-grow space-y-0 pt-15">
+        {/* <Animation> */}
           <Landing />
-        </Animation>
+        {/* </Animation> */}
         <Animation>
           <About />
         </Animation>

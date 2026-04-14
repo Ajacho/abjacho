@@ -6,10 +6,14 @@ export const Landing = () => {
   return (
     <section
       id="landing"
-      className="min-h-screen flex items-center justify-center text-yellow-400"
+      className="min-h-screen flex items-top justify-center text-[#2b3f55]
+      bg-[url('/public/llama_bg.png')] bg-cover bg-center relative bg-fixed
+      "
+    
+    
     >
-      <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold text-center text-size-xs ">
+      <div className="max-w-4xl mx-auto px-6 pt-20">
+        <h1 className="text-4xl top-100 font-bold text-center text-size-xs ">
           <TypeAnimation
             sequence={[
                 "Hey there :)",
@@ -21,10 +25,19 @@ export const Landing = () => {
           />
         </h1>
 
-        <h2 className="mt-4 text-white text-2xl  text-center">
-          This is <span className="text-yellow-400">Andrea</span>, a passionate developer with the curiosity to explore new technologies and create innovative solutions.
+        <h2 className="mt-4 text-[#54451b] text-2xl  text-center">
+          This is <span className="text-[#828c7d]">Andrea</span>, a passionate developer with the curiosity to explore new technologies and create innovative solutions.
         </h2>
       </div>
+                    {/* <div
+        class="absolute bottom-0 left-0 w-full h-20 
+              bg-gradient-to-b from-transparent to-[#46291d]">
+        </div> */}
+
+{/* <div class="absolute bottom-0 w-full h-15
+            bg-gradient-to-b from-white/0 to-white/80 backdrop-blur-sm">
+</div> */}
+
     </section>
   );
 };

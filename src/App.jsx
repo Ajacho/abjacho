@@ -16,7 +16,9 @@ function App() {
           <Landing />
         {/* </Animation> */}
         <Animation>
+          
           <About />
+          
         </Animation>
         <Animation delay={0.1}>
           <Experience />

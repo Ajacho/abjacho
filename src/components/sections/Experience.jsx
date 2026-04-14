@@ -75,7 +75,12 @@ export const Experience = () => {
       className="min-h-screen flex items-center justify-center"
     >
       <div className="max-w-4xl mx-auto px-6 ">
-        <h1 className="text-4xl font-bold text-yellow-400 italic">
+
+        <h1 className="text-4xl font-bold text-yellow-400 italic [background:linear-gradient(180deg,transparent_55%,#864a09_55%)]
+        bg-[length:100%_200%] bg-left-bottom animate-gradient">
+
+        
+        
           <TypeAnimation
             sequence={["Experience", 1000]}
             speed={{ type: "keyStrokeDelayInMs", value: 250 }}

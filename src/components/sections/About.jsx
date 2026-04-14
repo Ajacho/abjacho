@@ -3,50 +3,45 @@ import { CheckCheck } from "lucide-react";
 
 export const About = () => {
   return (
+    
+
     <section
       id="about"
 
       className="min-h-screen flex items-center justify-center  
       bottom-0 left-0 w-full h-20 
               bg-gradient-to-t from-transparent to-[#46291d]   
-      "
+ -mt-20 pt-20 rounded-t-[60%_40%]
+       "
     >
-
-                    {/* <div
-        class=" bottom-0 left-0 w-full h-20 
-              bg-gradient-to-t from-transparent to-[#46291d]">
-        </div> */}
-
-
-
 
       <div className="max-w-4xl mx-auto 
       ">
 
 
-        <h1 className="text-4xl font-bold text-yellow-400 italic">
+        <h1 className="text-4xl font-bold text-[#f1e7d8] italic [background:linear-gradient(180deg,transparent_55%,#864a09_55%)]
+        bg-[length:100%_200%] bg-left-bottom animate-gradient">
           <TypeAnimation
-            sequence={["About Me", 1000]}
+            sequence={["About Me ", 1000]}
             speed={{ type: "keyStrokeDelayInMs", value: 250 }}
             repeat={Infinity}
           />
         </h1>
-
-        <div className="border-t border-[#F6ECE3] transition-all duration-300 my-10" />
 
         <div className="transition-all duration-300 my-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             {/* col-1 */}
             <div className="hidden md:flex flex flex-col items-center justify-center">
               {/* Picture of me */}
-              <div className="about-image ">
+              <div className="about-image border-4 border-yellow-400 rounded-full p-1 mb-6 transition-all duration-300 hover:shadow-lg hover:shadow-yellow-400">
                 <img
                   src="./andrea.jpg"
                   alt="Andrea Jacho"
                   className="rounded-full transition-all"
                 />
               </div>
-              <div className="max-w-4xl mx-auto px-6 mb-10 grid grid-cols-1 gap-4">
+              {/* Text content for desktop */}
+              {/* <div className="max-w-4xl mx-auto px-6 mb-10 grid grid-cols-1 gap-4">
                 <p className="text-text-[##F6ECE3] mt-4">
                   Beyond coding, I capture Oregon’s landscapes through
                   photography and sharing them on
@@ -62,7 +57,8 @@ export const About = () => {
                   . When I’m not immersed in tech, you’ll likely find me at the
                   gym.
                 </p>
-              </div>
+              </div> */}
+              
             </div>
             {/* col-2 */}
             <div className="max-w-4xl mx-auto px-6 mb-10">
@@ -76,21 +72,18 @@ export const About = () => {
               </h1>
 
               <p className="mt-4">
-                Computer Science graduate from{" "}
+                PC Deployment Technician at Salem Health Hospital by day, 
+                UX and web dev enthusiast always. CS grad from {" "}
                 <a
                   className="text-yellow-400 font-bold"
                   href="https://wou.edu/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Western Oregon University
+                  WOU
                 </a>{" "}
-                (June 2025), originally from Ecuador and now based in Oregon. I work as a PC Deployment 
-                Technician at Salem Health Hospital, where I support large-scale device 
-                deployments and system configurations.
-
-                I’m passionate about UX design and web development, and I’m eager to apply 
-                my skills while continuing to grow in the tech industry.
+                 (2025), originally from Ecuador, now based in Oregon — 
+                 building toward a career in design and development one project at a time.
               </p>
               {/* Technologies list */}
 
@@ -114,7 +107,17 @@ export const About = () => {
                 </li>
               </list>
 
-              <div className="block md:hidden gap-4">
+              <p className="text-[##F6ECE3] mt-4">
+                When I'm not staring at my laptop, I'm chasing beautiful landscapes 
+                with my camera or logging reps at the gym. You can catch my shots
+                 on Pinterest.
+                
+                {/* Add pixel gif here and pinterest icon */}
+
+              </p>
+
+              {/* Mobile text content */}
+              {/* <div className="block md:hidden gap-4">
                 <p className="text-text-[##F6ECE3] mt-4">
                   Beyond coding, I capture Oregon’s landscapes through
                   photography and sharing them on
@@ -130,7 +133,8 @@ export const About = () => {
                   . When I’m not immersed in tech, you’ll likely find me at the
                   gym.
                 </p>
-              </div>
+              </div> */}
+
             </div>
           </div>
         </div>

@@ -3,24 +3,22 @@ import { CheckCheck } from "lucide-react";
 
 export const About = () => {
   return (
-    
-
     <section
       id="about"
-
       className="min-h-screen flex items-center justify-center  
       bottom-0 left-0 w-full h-20 
               bg-gradient-to-t from-transparent to-[#46291d]   
  -mt-20 pt-20 rounded-t-[60%_40%]
        "
     >
-
-      <div className="max-w-4xl mx-auto 
-      ">
-
-
-        <h1 className="text-4xl font-bold text-[#f1e7d8] italic [background:linear-gradient(180deg,transparent_55%,#864a09_55%)]
-        bg-[length:100%_200%] bg-left-bottom animate-gradient">
+      <div
+        className="max-w-4xl mx-auto 
+      "
+      >
+        <h1
+          className="text-4xl font-bold text-[#f1e7d8] italic [background:linear-gradient(180deg,transparent_55%,#864a09_55%)]
+        bg-[length:100%_200%] bg-left-bottom animate-gradient"
+        >
           <TypeAnimation
             sequence={["About Me ", 1000]}
             speed={{ type: "keyStrokeDelayInMs", value: 250 }}
@@ -40,6 +38,7 @@ export const About = () => {
                   className="rounded-full transition-all"
                 />
               </div>
+
               {/* Text content for desktop */}
               {/* <div className="max-w-4xl mx-auto px-6 mb-10 grid grid-cols-1 gap-4">
                 <p className="text-text-[##F6ECE3] mt-4">
@@ -58,22 +57,24 @@ export const About = () => {
                   gym.
                 </p>
               </div> */}
-              
+              <h1 className="text-4xl font-bold text-yellow-400 mb-4">
+                Andrea B Jacho
+              </h1>
             </div>
             {/* col-2 */}
             <div className="max-w-4xl mx-auto px-6 mb-10">
-              <h1 className="text-4xl font-bold text-yellow-400 mb-4">
-                Andrea B Jacho
-                {/* <TypeAnimation
+              {/* <h1 className="text-4xl font-bold text-yellow-400 mb-4">
+                Andrea B JachoOOO
+                <TypeAnimation
                   sequence={["Andrea Jacho", 1000]}
                   speed={{ type: "keyStrokeDelayInMs", value: 250 }}
                   repeat={Infinity}
-                /> */}
-              </h1>
+                />
+              </h1> */}
 
               <p className="mt-4">
-                PC Deployment Technician at Salem Health Hospital by day, 
-                UX and web dev enthusiast always. CS grad from {" "}
+                PC Deployment Technician at Salem Health Hospital by day, UX and
+                web dev enthusiast always. CS grad from{" "}
                 <a
                   className="text-yellow-400 font-bold"
                   href="https://wou.edu/"
@@ -82,8 +83,8 @@ export const About = () => {
                 >
                   WOU
                 </a>{" "}
-                 (2025), originally from Ecuador, now based in Oregon — 
-                 building toward a career in design and development one project at a time.
+                (2025), originally from Ecuador, now based in Oregon — building
+                toward a career in design and development one project at a time.
               </p>
               {/* Technologies list */}
 
@@ -107,14 +108,43 @@ export const About = () => {
                 </li>
               </list>
 
-              <p className="text-[##F6ECE3] mt-4">
+              <div>
+                {/* Section one left */}
+                <div className="grid grid-cols-2 gap-1 mt-5">
+                    {/* Add pixel gif here and pinterest icon */}
+                    <div className="about-image rounded-full p-1 size-40 ">
+                      <img
+                        src="./llamaPixel.png"
+                        alt="llama"
+                        className="rounded-full transition-all"
+                      />
+                    </div>
+                <p className="text-[##F6ECE3] col-span-1">
+                  When I'm not coding, I'm shooting landscapes. Catch my shots on{" "}
+                  <a
+                    className="text-yellow-400 font-bold"
+                    href="https://www.pinterest.com/abjacho"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Pinterest!
+                  </a>
+
+
+
+                </p>
+                </div>
+
+              </div>
+
+              {/* <p className="text-[##F6ECE3] mt-4">
                 When I'm not staring at my laptop, I'm chasing beautiful landscapes 
                 with my camera or logging reps at the gym. You can catch my shots
                  on Pinterest.
                 
-                {/* Add pixel gif here and pinterest icon */}
 
-              </p>
+
+              </p> */}
 
               {/* Mobile text content */}
               {/* <div className="block md:hidden gap-4">
@@ -134,7 +164,6 @@ export const About = () => {
                   gym.
                 </p>
               </div> */}
-
             </div>
           </div>
         </div>

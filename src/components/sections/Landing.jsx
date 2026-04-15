@@ -5,7 +5,8 @@ export const Landing = () => {
 
   return (
     <section
-      id="landing"
+      id="land
+      ing"
       className="min-h-screen flex items-top justify-center text-[#2b3f55]
       bg-[url('/public/llama_bg.png')] bg-cover bg-center relative bg-fixed
       "

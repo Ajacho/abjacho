@@ -39,44 +39,18 @@ export const About = () => {
                 />
               </div>
 
-              {/* Text content for desktop */}
-              {/* <div className="max-w-4xl mx-auto px-6 mb-10 grid grid-cols-1 gap-4">
-                <p className="text-text-[##F6ECE3] mt-4">
-                  Beyond coding, I capture Oregon’s landscapes through
-                  photography and sharing them on
-                  <a
-                    className="text-pink-500 font-bold"
-                    href="https://www.pinterest.com/abjacho"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {" "}
-                    Pinterest
-                  </a>
-                  . When I’m not immersed in tech, you’ll likely find me at the
-                  gym.
-                </p>
-              </div> */}
               <h1 className="text-4xl font-bold text-yellow-400 mb-4">
                 Andrea B Jacho
               </h1>
             </div>
             {/* col-2 */}
             <div className="max-w-4xl mx-auto px-6 mb-10">
-              {/* <h1 className="text-4xl font-bold text-yellow-400 mb-4">
-                Andrea B JachoOOO
-                <TypeAnimation
-                  sequence={["Andrea Jacho", 1000]}
-                  speed={{ type: "keyStrokeDelayInMs", value: 250 }}
-                  repeat={Infinity}
-                />
-              </h1> */}
 
               <p className="mt-4">
                 PC Deployment Technician at Salem Health Hospital by day, UX and
-                web dev enthusiast always. CS grad from{" "}
+                web dev enthusiast always. CS grad from {" "}
                 <a
-                  className="text-yellow-400 font-bold"
+                  className="text-yellow-400 font-bold underline decoration-transparent transition duration-300 ease-in-out hover:decoration-inherit hover:text-blue-400"
                   href="https://wou.edu/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -100,11 +74,11 @@ export const About = () => {
                 </li>
                 <li className="mb-4">
                   <CheckCheck className="text-yellow-400 inline-block mr-2" />
-                  HTML5, CSS3, Tailwind CSS
+                  Bootstrap, CSS3, Tailwind CSS
                 </li>
                 <li className="mb-4">
                   <CheckCheck className="text-yellow-400 inline-block mr-2" />
-                  Device imaging & deployment tools
+                  Windows 10/11, Windows CLI, AD, LWS reconfiguration
                 </li>
               </list>
 
@@ -122,48 +96,17 @@ export const About = () => {
                 <p className="text-[##F6ECE3] col-span-1">
                   When I'm not coding, I'm shooting landscapes. Catch my shots on{" "}
                   <a
-                    className="text-yellow-400 font-bold"
+                    className="text-yellow-400 font-bold underline decoration-transparent transition duration-300 ease-in-out hover:decoration-inherit hover:text-blue-400"
                     href="https://www.pinterest.com/abjacho"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Pinterest!
+                    Pinterest <span>→</span>
                   </a>
-
-
-
                 </p>
                 </div>
-
               </div>
 
-              {/* <p className="text-[##F6ECE3] mt-4">
-                When I'm not staring at my laptop, I'm chasing beautiful landscapes 
-                with my camera or logging reps at the gym. You can catch my shots
-                 on Pinterest.
-                
-
-
-              </p> */}
-
-              {/* Mobile text content */}
-              {/* <div className="block md:hidden gap-4">
-                <p className="text-text-[##F6ECE3] mt-4">
-                  Beyond coding, I capture Oregon’s landscapes through
-                  photography and sharing them on
-                  <a
-                    className="text-pink-500 font-bold"
-                    href="https://www.pinterest.com/abjacho"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {" "}
-                    Pinterest
-                  </a>
-                  . When I’m not immersed in tech, you’ll likely find me at the
-                  gym.
-                </p>
-              </div> */}
             </div>
           </div>
         </div>

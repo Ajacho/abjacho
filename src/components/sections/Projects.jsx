@@ -7,24 +7,35 @@ export const Projects = () => {
       src: "./UxCheckmate_webapp.png",
       alt: "UxCheckmate screenshot",
       title: "UxCheckmate",
+      tools: [
+        ".NET(ASP.NET Core)",
+        "Entity Framework Core + SQL Server",
+        "Swagger/Swashbuckle",
+        "Pa11y + Playwright",
+      ],
       desc: "An accessible web checker that analyzes web pages and provides detailed reports and suggestions for improvement.",
-      link: "https://github.com/rausches/deep-blue-repo",
+      githubLink: "https://github.com/rausches/deep-blue-repo",
+      liveLink: null,
     },
     {
       id: 2,
       src: "./random_code_img.jpeg",
       alt: "CS through college",
       title: "CS through college",
-      desc: "My CS projects from college, organized by semester and topic.",
-      link: "https://github.com/Ajacho/cs-through-college",
+      tools: ["JavaScript", "HTML", "CSS"],
+      desc: "Computer Science projects from college, organized by semester and topic.",
+      githubLink: "https://github.com/Ajacho/cs-through-college",
+      liveLink: null,
     },
     {
       id: 3,
       src: "./game.png",
       alt: "microStudio game",
-      title: "Games with microStudio",
-      desc: "A collection of future games built with microStudio :D",
-      link: "https://microstudio.io/abjacho/",
+      title: "microStudio Game",
+      tools: ["microStudio"],
+      desc: "Creating 2d games with microStudio, a lightweight game engine for rapid prototyping and development.",
+      githubLink: null,
+      liveLink: "https://microstudio.io/abjacho/",
     },
   ];
 
@@ -33,47 +44,94 @@ export const Projects = () => {
       id="projects"
       className="min-h-screen flex items-center justify-center"
     >
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="max-w-4xl mx-auto px-6">
-          <h1 className="text-4xl font-bold italic text-yellow-400">
-            <TypeAnimation
-              sequence={["Project Showcase", 1000]}
-              speed={{ type: "keyStrokeDelayInMs", value: 250 }}
-              repeat={Infinity}
-            />
-          </h1>
-          <div className="border-t border-[#F6ECE3] my-6" />
-          <p className="mb-12">
-            Explore a selection of my personal and technical projects,
-            demonstrating my growth as a developer and passion for solving
-            real-world problems with technology.
-          </p>
+      <div className="max-w-4xl mx-auto px-6">
+        <h1
+          className="text-4xl font-bold text-[#f1e7d8] italic 
+          [background:linear-gradient(180deg,transparent_55%,#4c2f20_55%)]
+        bg-[length:100%_200%] bg-left-bottom animate-gradient"
+        >
+          <TypeAnimation
+            sequence={["Project Showcase", 1000]}
+            speed={{ type: "keyStrokeDelayInMs", value: 250 }}
+            repeat={Infinity}
+          />
+        </h1>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {spotlightProjects.map((project) => (
-              <div
-                key={project.id}
-                className=" rounded-lg shadow-md hover:shadow-white hover:shadow-xl transition-shadow  duration-300 flex flex-col"
-              >
-                <img
-                  src={project.src}
-                  alt={project.alt}
-                  className="rounded-t-lg h-40 object-cover w-full"
-                />
-                <div className="p-4 flex flex-col flex-grow">
-                  <h2 className="text-xl text-yellow-400 font-semibold mb-2 flex justify-between items-center">
+        <div className="pt-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Big project */}
+            <div className="md:col-span-2 md:row-span-2 bg-[#f1e7d8] rounded-2xl p-6">
+              {spotlightProjects[0] && (
+                <>
+                  <img
+                    src={spotlightProjects[0].src}
+                    className="rounded-lg mb-4"
+                  />
+                  <div className="flex justify-between items-center">
+                    <h2 className="text-xl text-[#4c2f20] font-semibold">
+                      {spotlightProjects[0].title}
+                    </h2>
                     <a
-                      href={project.link}
+                      href={spotlightProjects[0].githubLink}
+                      target="_blank"
+                      className="text-sm text-[#2b3f55] font-bold underline 
+                    decoration-transparent transition duration-300 ease-in-out
+                     hover:decoration-inherit hover:text-blue-400"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      {project.title}
+                      View on GitHub ↗
                     </a>
-                  </h2>
-                  <p className="text-sm text-grey-300 flex-grow">
-                    {project.desc}
-                  </p>
-                </div>
+                  </div>
+
+                  <div className="flex flex-wrap gap-2 my-2">
+                    {spotlightProjects[0].tools.map((tool, index) => (
+                      <span
+                        key={index}
+                        className="bg-[#2b3f55] text-[#f1e7d8] text-xs font-medium px-2 py-1 rounded-full"
+                      >
+                        {tool}
+                      </span>
+                    ))}
+                  </div>
+                </>
+              )}
+            </div>
+
+            {/* Small projects */}
+            {spotlightProjects.slice(1, 3).map((project) => (
+              <div key={project.id} className="bg-[#f1e7d8] rounded-2xl p-6">
+                <h3 className="text-[#4c2f20] font-semibold">
+                  {project.title}
+                </h3>
+                <p className="text-sm mt-2 text-[#4c2f20]">{project.desc}</p>
+
+                <footer className="mt-4">
+                  {project.githubLink !== null ? (
+                    <a
+                      href={project.githubLink}
+                      target="_blank"
+                      className="text-sm text-[#2b3f55] font-bold underline 
+                    decoration-transparent transition duration-300 ease-in-out
+                     hover:decoration-inherit hover:text-blue-400"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      View on GitHub ↗
+                    </a>
+                  ) : (
+                    <a
+                      href={project.liveLink}
+                      target="_blank"
+                      className="ml-4 text-sm text-[#2b3f55] font-bold underline 
+                    decoration-transparent transition duration-300 ease-in-out
+                     hover:decoration-inherit hover:text-blue-400"
+                      rel="noopener noreferrer"
+                    >
+                      View Live ↗
+                    </a>
+                  )}
+                </footer>
               </div>
             ))}
           </div>

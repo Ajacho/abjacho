@@ -76,7 +76,8 @@ export const Experience = () => {
     >
       <div className="max-w-4xl mx-auto px-6 ">
         <h1
-          className="text-4xl font-bold text-[#f1e7d8] italic [background:linear-gradient(180deg,transparent_55%,#4c2f20_55%)]
+          className="text-4xl font-bold text-[#f1e7d8] italic 
+          [background:linear-gradient(180deg,transparent_55%,#4c2f20_55%)]
         bg-[length:100%_200%] bg-left-bottom animate-gradient"
         >
           <TypeAnimation

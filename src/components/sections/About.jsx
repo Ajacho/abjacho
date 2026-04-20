@@ -101,7 +101,7 @@ export const About = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Pinterest <span>→</span>
+                      Pinterest <span>↗</span>
                     </a>
                   </p>
                 </div>

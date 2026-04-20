@@ -72,90 +72,51 @@ export const Experience = () => {
   return (
     <section
       id="experience"
-      className="min-h-screen flex items-center justify-center"
+      className="min-h-screen flex items-center justify-center "
     >
       <div className="max-w-4xl mx-auto px-6 ">
-
-        <h1 className="text-4xl font-bold text-yellow-400 italic [background:linear-gradient(180deg,transparent_55%,#864a09_55%)]
-        bg-[length:100%_200%] bg-left-bottom animate-gradient">
-
-        
-        
+        <h1
+          className="text-4xl font-bold text-[#f1e7d8] italic [background:linear-gradient(180deg,transparent_55%,#4c2f20_55%)]
+        bg-[length:100%_200%] bg-left-bottom animate-gradient"
+        >
           <TypeAnimation
-            sequence={["Experience", 1000]}
+            sequence={["My Career Journey ", 1000]}
             speed={{ type: "keyStrokeDelayInMs", value: 250 }}
             repeat={Infinity}
           />
         </h1>
 
-        <div className="border-t border-[#F6ECE3] transition-all duration-300 my-10" />
+        {/* Journey Map */}
 
-        <div className="flex justify-center mt-10">
-          {jobExperience.map((tab) => (
-            <button
-              key={tab.id}
-              onClick={() => setActiveTab(tab.company)}
-              className={`flex items-center px-4 py-2 hover:bg-[#F6ECE3] hover:text-[#00408C] text-[#F6ECE3] rounded-lg transition-all duration-300 mr-4 ${
-                activeTab === tab.company ? "font-bold text-yellow-400 border-b-2 border-yellow-400" : ""
-              }`}
-              aria-selected={activeTab === tab.company}
-            >
-              <span className="mr-2 hidden md:inline">{tab.company}</span>
-              <span className="inline md:hidden">{tab.id}</span>
-            </button>
-          ))}
-        </div>
+        <div className="max-w-4xl mx-auto py-10">
+          <div className="relative ">
+            {/* Center Line */}
+            <div className="absolute left-1/2 top-0 h-full w-1 bg-[#4c2f20] transform -translate-x-1/2"></div>
 
-        <div className="mt-6">
-          {jobExperience.map(
-            (tab) =>
-              activeTab === tab.company && (
-                <div key={tab.id} className="text-[#F6ECE3]">
-                  {/* <h2 className="inline md:hidden text-2xl font-bold text-yellow-400">{tab.jobTitle}</h2> */}
-                  <h2 className="text-2xl font-bold text-yellow-400">{tab.jobTitle}</h2>
-                  <h3 className="text-gray-300">{tab.duration}</h3>
-                  <h4 className="text-gray-300 mb-4">{tab.location}</h4>
-
-                  <ul className="list-disc list-inside mt-5">
-                    {tab.desc?.map((item, index) => (
-                      <li key={index} className="mb-4">
-                        <CheckCheck className="text-yellow-400 inline-block mr-2" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-
-                  <p className="mt-4">
-                    <span className="text-yellow-400 font-bold">Key Skills:</span> {tab.keySkills}
+            {jobExperience.map((job, index) => (
+              <div
+                key={job.id}
+                className={`mb-12 flex ${index % 2 === 0 ? "justify-start" : "justify-end"} w-full group`}
+              >
+                <div
+                  className={`w-1/2 ${index % 2 === 0 ? "pr-8 text-right" : "pl-8 text-left"}`}
+                >
+                  <div className="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-[#4c2f20] rounded-full border-2 border-[#F6ECE3]"></div>
+                  <h3 className="text-lg font-semibold font-mono">{job.jobTitle}</h3>
+                  <h4 className="text-sm text-yellow-400">{job.company} - {job.location}</h4>
+                  <p className="text-sm">{job.duration}</p>
+                  <p className="mt-2">{job.desc[0]}</p>
+                  {/* hidden extra content */}
+                  <p
+                    className="text-xs text-white max-h-0 opacity-0 overflow-hidden group-hover:max-h-20 
+      group-hover:opacity-100"
+                  >
+                    {job.desc.slice(1).join(" ")}
                   </p>
-
-                  {/* Render second job only when present */}
-                  {tab.jobTitle2 && (
-                    <>
-                      <hr className="my-6 border-gray-700" />
-                      <h2 className="text-2xl font-bold text-yellow-400">{tab.jobTitle2}</h2>
-                      {tab.duration2 && <h3 className="text-gray-300">{tab.duration2}</h3>}
-                      <h4 className="text-gray-300 mb-4">{tab.location}</h4>
-
-                      <ul className="list-disc list-inside mt-5">
-                        {tab.desc2?.map((item, index) => (
-                          <li key={index} className="mb-4">
-                            <CheckCheck className="text-yellow-400 inline-block mr-2" />
-                            {item}
-                          </li>
-                        ))}
-                      </ul>
-
-                      {tab.keySkills2 && (
-                        <p className="mt-4">
-                          <span className="text-yellow-400 font-bold">Key Skills:</span> {tab.keySkills2}
-                        </p>
-                      )}
-                    </>
-                  )}
                 </div>
-              )
-          )}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

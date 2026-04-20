@@ -20,7 +20,7 @@ function App() {
           <About />
           
         </Animation>
-        <Animation delay={0.1}>
+        <Animation>
           <Experience />
         </Animation>
         <Animation delay={0.2}>

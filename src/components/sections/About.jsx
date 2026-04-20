@@ -45,10 +45,9 @@ export const About = () => {
             </div>
             {/* col-2 */}
             <div className="max-w-4xl mx-auto px-6 mb-10">
-
               <p className="mt-4">
                 PC Deployment Technician at Salem Health Hospital by day, UX and
-                web dev enthusiast always. CS grad from {" "}
+                web dev enthusiast always. CS grad from{" "}
                 <a
                   className="text-yellow-400 font-bold underline decoration-transparent transition duration-300 ease-in-out hover:decoration-inherit hover:text-blue-400"
                   href="https://wou.edu/"
@@ -85,28 +84,28 @@ export const About = () => {
               <div>
                 {/* Section one left */}
                 <div className="grid grid-cols-2 gap-1 mt-5">
-                    {/* Add pixel gif here and pinterest icon */}
-                    <div className="about-image rounded-full p-1 size-40 ">
-                      <img
-                        src="./llamaPixel.png"
-                        alt="llama"
-                        className="rounded-full transition-all"
-                      />
-                    </div>
-                <p className="text-[##F6ECE3] col-span-1">
-                  When I'm not coding, I'm shooting landscapes. Catch my shots on{" "}
-                  <a
-                    className="text-yellow-400 font-bold underline decoration-transparent transition duration-300 ease-in-out hover:decoration-inherit hover:text-blue-400"
-                    href="https://www.pinterest.com/abjacho"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Pinterest <span>→</span>
-                  </a>
-                </p>
+                  {/* Add pixel gif here and pinterest icon */}
+                  <div className="about-image rounded-full p-1 size-40 ">
+                    <img
+                      src="./llamaPixel.png"
+                      alt="llama"
+                      className="rounded-full transition-all"
+                    />
+                  </div>
+                  <p className="text-[##F6ECE3] col-span-1">
+                    When I'm not coding, I'm shooting landscapes. Catch my shots
+                    on{" "}
+                    <a
+                      className="text-yellow-400 font-bold underline decoration-transparent transition duration-300 ease-in-out hover:decoration-inherit hover:text-blue-400"
+                      href="https://www.pinterest.com/abjacho"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Pinterest <span>→</span>
+                    </a>
+                  </p>
                 </div>
               </div>
-
             </div>
           </div>
         </div>

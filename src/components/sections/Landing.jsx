@@ -13,11 +13,15 @@ export const Landing = () => {
     
     
     >
-      <div className="max-w-4xl mx-auto px-6 pt-20">
-        <h1 className="text-4xl top-100 font-bold text-center text-size-xs ">
+      <div className="max-w-4xl mx-auto px-6 pt-20 text-justify">
+        <h2 className="text-2xl text-[#54451b] ">
+          Hi, I'm
+        </h2>
+        <br />
+        <h1 className="text-4xl top-100 font-bold text-size-xs">
           <TypeAnimation
             sequence={[
-                "Hey there :)",
+                "Andrea :)",
                 1000
             ]}
             speed={{ type: "keyStrokeDelayInMs", value: 250 }}
@@ -26,18 +30,24 @@ export const Landing = () => {
           />
         </h1>
 
-        <h2 className="mt-4 text-[#54451b] text-2xl  text-center">
-          This is <span className="text-[#828c7d]">Andrea</span>, a passionate developer with the curiosity to explore new technologies and create innovative solutions.
+        <h2 className="mt-4 text-[#54451b] text-2xl">
+          Web developer & IT specialist
         </h2>
-      </div>
-                    {/* <div
-        class="absolute bottom-0 left-0 w-full h-20 
-              bg-gradient-to-b from-transparent to-[#46291d]">
-        </div> */}
+        <button
+          className="mt-6 px-4 py-2 bg-[#54451b] text-[#f1e7d8] rounded-lg font-semibold 
+          hover:bg-[#2b3f55] transition duration-300 ease-in-out"
+        >
+          <a href="#projects">View projects</a>
+        </button>
+        <button
+          className="mt-6 ml-4 px-4 py-2 bg-[#54451b] text-[#f1e7d8] rounded-lg font-semibold 
+          hover:bg-[#2b3f55] transition duration-300 ease-in-out"
+        >
+          <a href="mailto:belen.bjacho@gmail.com">Contact me</a>
+        </button>
 
-{/* <div class="absolute bottom-0 w-full h-15
-            bg-gradient-to-b from-white/0 to-white/80 backdrop-blur-sm">
-</div> */}
+      </div>
+                    
 
     </section>
   );

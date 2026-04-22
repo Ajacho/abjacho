@@ -29,19 +29,23 @@ export const About = () => {
         <div className="transition-all duration-300 my-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             {/* col-1 */}
-            <div className="hidden md:flex flex flex-col items-center justify-center">
+            <div className="hidden md:flex flex flex-col items-center justify-top mt-10 ">
               {/* Picture of me */}
               <div className="about-image border-4 border-yellow-400 rounded-full p-1 mb-6 transition-all duration-300 hover:shadow-lg hover:shadow-yellow-400">
                 <img
                   src="./andrea.jpg"
                   alt="Andrea Jacho"
-                  className="rounded-full transition-all"
+                  className="rounded-full transition-all size-70"
                 />
               </div>
 
               <h1 className="text-4xl font-bold text-yellow-400 mb-4">
                 Andrea B Jacho
               </h1>
+              
+
+
+
             </div>
             {/* col-2 */}
             <div className="max-w-4xl mx-auto px-6 mb-10">
@@ -82,17 +86,18 @@ export const About = () => {
               </list>
 
               <div>
-                {/* Section one left */}
                 <div className="grid grid-cols-2 gap-1 mt-5">
-                  {/* Add pixel gif here and pinterest icon */}
+                  {" "}
                   <div className="about-image rounded-full p-1 size-40 ">
+                    {" "}
                     <img
                       src="./llamaPixel.png"
                       alt="llama"
                       className="rounded-full transition-all"
-                    />
-                  </div>
-                  <p className="text-[##F6ECE3] col-span-1">
+                    />{" "}
+                  </div>{" "}
+                  <p className="text-[##F6ECE3] col-span-1 ">
+                    {" "}
                     When I'm not coding, I'm shooting landscapes. Catch my shots
                     on{" "}
                     <a
@@ -101,11 +106,14 @@ export const About = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Pinterest <span>↗</span>
-                    </a>
-                  </p>
+                      {" "}
+                      Pinterest <span>↗</span>{" "}
+                    </a>{" "}
+                  </p>{" "}
                 </div>
               </div>
+
+
             </div>
           </div>
         </div>

@@ -12,15 +12,13 @@ function App() {
     <div className="min-h-screen flex flex-col">
       <NavBar />
       <main className="flex-grow space-y-0 pt-15">
-        {/* <Animation> */}
-          <Landing />
-        {/* </Animation> */}
         <Animation>
-          
-          <About />
-          
+          <Landing />
         </Animation>
         <Animation>
+          <About />
+        </Animation>
+        <Animation delay={0.1}>
           <Experience />
         </Animation>
         <Animation delay={0.2}>

@@ -44,7 +44,7 @@ export const Projects = () => {
       id="projects"
       className="min-h-screen flex items-center justify-center"
     >
-      <div className="max-w-4xl mx-auto px-6">
+      <div className="max-w-4xl mx-auto px-6 py-20">
         <h1
           className="text-4xl font-bold text-[#f1e7d8] italic 
           [background:linear-gradient(180deg,transparent_55%,#4c2f20_55%)]
@@ -77,13 +77,12 @@ export const Projects = () => {
                       className="text-sm text-[#2b3f55] font-bold underline 
                     decoration-transparent transition duration-300 ease-in-out
                      hover:decoration-inherit hover:text-blue-400"
-                      target="_blank"
                       rel="noopener noreferrer"
                     >
                       View on GitHub ↗
                     </a>
                   </div>
-
+                  {/* Badges */}
                   <div className="flex flex-wrap gap-2 my-2">
                     {spotlightProjects[0].tools.map((tool, index) => (
                       <span
@@ -114,7 +113,6 @@ export const Projects = () => {
                       className="text-sm text-[#2b3f55] font-bold underline 
                     decoration-transparent transition duration-300 ease-in-out
                      hover:decoration-inherit hover:text-blue-400"
-                      target="_blank"
                       rel="noopener noreferrer"
                     >
                       View on GitHub ↗

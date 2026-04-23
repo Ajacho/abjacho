@@ -2,7 +2,6 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation";
 
 export const Landing = () => {
-
   return (
     <section
       id="land
@@ -10,20 +9,13 @@ export const Landing = () => {
       className="min-h-screen flex items-top justify-center text-[#2b3f55]
       bg-[url('/public/llama_bg.png')] bg-cover bg-center relative bg-fixed
       "
-    
-    
     >
       <div className="max-w-4xl mx-auto px-6 pt-20 text-justify">
-        <h2 className="text-2xl text-[#54451b] ">
-          Hi, I'm
-        </h2>
+        <h2 className="text-2xl text-[#54451b] ">Hi there, I'm</h2>
         <br />
         <h1 className="text-4xl top-100 font-bold text-size-xs">
           <TypeAnimation
-            sequence={[
-                "Andrea :)",
-                1000
-            ]}
+            sequence={["Andrea :)", 1000]}
             speed={{ type: "keyStrokeDelayInMs", value: 250 }}
             style={{ fontSize: "2em" }}
             repeat={Infinity}
@@ -45,10 +37,7 @@ export const Landing = () => {
         >
           <a href="mailto:belen.bjacho@gmail.com">Contact me</a>
         </button>
-
       </div>
-                    
-
     </section>
   );
 };

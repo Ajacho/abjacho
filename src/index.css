@@ -2,18 +2,14 @@
 @tailwind components;
 /* @tailwind utilities; */
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   font-family: "mono", monospace;
-  /* font-family: "space grotesk", sans-serif; */
 
-  /* background: linear-gradient(to bottom left, #bc8a54, #864a09) !important; */
-  background-color: #864a09 ;
-  /* bg color 
-    background: linear-gradient(to bottom left, #063064, #0a192fd7) !important;
+  background-color: #864a09;
 
-  ->  */
   color: #f1e7d8;
 }
 
@@ -24,5 +20,4 @@ list {
 li {
   /* remove style */
   list-style-type: none;
-
 }

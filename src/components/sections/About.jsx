@@ -12,7 +12,7 @@ export const About = () => {
        "
     >
       <div
-        className="max-w-4xl mx-auto 
+        className="max-w-4xl mx-auto px-6 py-20
       "
       >
         <h1
@@ -42,10 +42,6 @@ export const About = () => {
               <h1 className="text-4xl font-bold text-yellow-400 mb-4">
                 Andrea B Jacho
               </h1>
-              
-
-
-
             </div>
             {/* col-2 */}
             <div className="max-w-4xl mx-auto px-6 mb-10">
@@ -81,7 +77,7 @@ export const About = () => {
                 </li>
                 <li className="mb-4">
                   <CheckCheck className="text-yellow-400 inline-block mr-2" />
-                  Windows 10/11, Windows CLI, AD, LWS reconfiguration
+                  Windows 11, Windows CLI, AD, LWS reconfiguration
                 </li>
               </list>
 
@@ -96,7 +92,7 @@ export const About = () => {
                       className="rounded-full transition-all"
                     />{" "}
                   </div>{" "}
-                  <p className="text-[##F6ECE3] col-span-1 ">
+                  <p className="text-[##F6ECE3] col-span-1 mt-2">
                     {" "}
                     When I'm not coding, I'm shooting landscapes. Catch my shots
                     on{" "}
@@ -112,8 +108,6 @@ export const About = () => {
                   </p>{" "}
                 </div>
               </div>
-
-
             </div>
           </div>
         </div>

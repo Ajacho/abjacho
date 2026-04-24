@@ -6,10 +6,8 @@ export const About = () => {
     <section
       id="about"
       className="min-h-screen flex items-center justify-center  
-      bottom-0 left-0 w-full h-20 
-              bg-gradient-to-t from-transparent to-[#46291d]   
- -mt-20 pt-20 rounded-t-[60%_40%]
-       "
+      bottom-0 left-0 w-full
+              bg-gradient-to-b from-[#4e2d1a] to-[#864a09]"
     >
       <div
         className="max-w-4xl mx-auto px-6 py-20

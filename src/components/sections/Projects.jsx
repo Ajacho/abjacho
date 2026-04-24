@@ -50,11 +50,12 @@ export const Projects = () => {
           [background:linear-gradient(180deg,transparent_55%,#4c2f20_55%)]
         bg-[length:100%_200%] bg-left-bottom animate-gradient"
         >
-          <TypeAnimation
+          Projects
+          {/* <TypeAnimation
             sequence={["Project Showcase", 1000]}
             speed={{ type: "keyStrokeDelayInMs", value: 250 }}
             repeat={Infinity}
-          />
+          /> */}
         </h1>
 
         <div className="pt-10">

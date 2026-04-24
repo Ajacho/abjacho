@@ -17,11 +17,12 @@ export const About = () => {
           className="text-4xl font-bold text-[#f1e7d8] italic [background:linear-gradient(180deg,transparent_55%,#864a09_55%)]
         bg-[length:100%_200%] bg-left-bottom animate-gradient"
         >
-          <TypeAnimation
-            sequence={["About Me ", 1000]}
+          About Me
+          {/* <TypeAnimation
+            sequence={["About Me", 1000]}
             speed={{ type: "keyStrokeDelayInMs", value: 250 }}
             repeat={Infinity}
-          />
+          /> */}
         </h1>
 
         <div className="transition-all duration-300 my-10">

@@ -103,11 +103,12 @@ export const Experience = () => {
           [background:linear-gradient(180deg,transparent_55%,#4c2f20_55%)]
         bg-[length:100%_200%] bg-left-bottom animate-gradient"
         >
-          <TypeAnimation
+            My Career Journey
+          {/* <TypeAnimation
             sequence={["My Career Journey ", 1000]}
             speed={{ type: "keyStrokeDelayInMs", value: 250 }}
             repeat={Infinity}
-          />
+          /> */}
         </h1>
 
         {/* Journey Map */}

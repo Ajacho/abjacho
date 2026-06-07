@@ -45,7 +45,7 @@ export const About = () => {
             {/* col-2 */}
             <div className="max-w-4xl mx-auto px-6 mb-10">
               <p className="mt-4">
-                PC Deployment Technician at Salem Health Hospital by day, UX and
+                Information Technology Support Specialist at Salem Health Hospital by day, UX and
                 web dev enthusiast always. CS grad from{" "}
                 <a
                   className="text-yellow-400 font-bold underline decoration-transparent transition duration-300 ease-in-out hover:decoration-inherit hover:text-blue-400"

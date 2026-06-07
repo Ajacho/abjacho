@@ -37,6 +37,20 @@ export const Projects = () => {
       githubLink: null,
       liveLink: "https://microstudio.io/abjacho/",
     },
+    {
+      id: 4,
+      src: "./kABoom1",
+      alt: "Collab game on microstudio",
+      title: "KA-Boom",
+      tools: ["microstudio"],
+      desc: "This is a classic 2D endless runner game with obstacles. Would you be able to reach max score?",
+      collaborator: {
+        name: "Kyle Blair",
+        url: "https://kyleblair.azurewebsites.net/"
+      },
+      githubLink: null,
+      liveLink: "https://microstudio.io/Magyk231/kaboom/"
+    }
   ];
 
   return (
@@ -99,38 +113,55 @@ export const Projects = () => {
             </div>
 
             {/* Small projects */}
-            {spotlightProjects.slice(1, 3).map((project) => (
+            {spotlightProjects.slice(1, 4).map((project) => (
               <div key={project.id} className="bg-[#f1e7d8] rounded-2xl p-6">
                 <h3 className="text-[#4c2f20] font-semibold">
                   {project.title}
                 </h3>
                 <p className="text-sm mt-2 text-[#4c2f20]">{project.desc}</p>
 
-                <footer className="mt-4">
-                  {project.githubLink !== null ? (
-                    <a
-                      href={project.githubLink}
-                      target="_blank"
-                      className="text-sm text-[#2b3f55] font-bold underline 
+          <footer className="mt-4">
+            {project.githubLink ? (
+              <a
+                href={project.githubLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-[#2b3f55] font-bold underline
+                decoration-transparent transition duration-300 ease-in-out
+                hover:decoration-inherit hover:text-blue-400"
+              >
+                View on GitHub ↗
+              </a>
+            ) : (
+              <>
+                <a
+                  href={project.liveLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-[#2b3f55] font-bold underline
+                  decoration-transparent transition duration-300 ease-in-out
+                  hover:decoration-inherit hover:text-blue-400"
+                >
+                  View Live ↗
+                </a>             
+                
+                {project.collaborator && (
+                  
+                  <a
+                    href={project.collaborator.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="ml-0 text-sm text-[#2b3f55] font-bold underline
                     decoration-transparent transition duration-300 ease-in-out
-                     hover:decoration-inherit hover:text-blue-400"
-                      rel="noopener noreferrer"
-                    >
-                      View on GitHub ↗
-                    </a>
-                  ) : (
-                    <a
-                      href={project.liveLink}
-                      target="_blank"
-                      className="ml-4 text-sm text-[#2b3f55] font-bold underline 
-                    decoration-transparent transition duration-300 ease-in-out
-                     hover:decoration-inherit hover:text-blue-400"
-                      rel="noopener noreferrer"
-                    >
-                      View Live ↗
-                    </a>
-                  )}
-                </footer>
+                    hover:decoration-inherit hover:text-blue-400"
+                  >
+                    <h4 className="text-[#4c2f20] font-semibold ml-0 m-4">Collaborator:</h4>
+                    👤 Kyle Blair ↗
+                  </a>
+                )}
+              </>
+            )}
+          </footer>
               </div>
             ))}
           </div>

@@ -101,7 +101,7 @@ Error generating stack: `+n.message+`
   bg-[url('/llama_bg.png')] bg-cover bg-left-top bg-no-repeat\r
   md:bg-center md:bg-fixed\r
   relative\r
-`,children:X.jsxs("div",{className:"max-w-4xl mx-auto px-6 pt-30 ",children:[X.jsx("h2",{className:"text-2xl text-[#54451b] ",children:"Hi there, I'm"}),X.jsx("br",{}),X.jsx("h1",{className:"text-4xl top-100 font-bold text-size-xs",children:X.jsx(Gb,{sequence:["Andrea",1e3],speed:{type:"keyStrokeDelayInMs",value:250},style:{fontSize:"2em"},repeat:1/0})}),X.jsx("h2",{className:"mt-4 text-[#54451b] text-2xl",children:"IT girl Tech 😁"}),X.jsx("button",{className:`mt-6 px-4 py-2 bg-[#54451b] text-[#f1e7d8] rounded-lg font-semibold \r
+`,children:X.jsxs("div",{className:"max-w-4xl mx-auto px-6 pt-40",children:[X.jsx("h2",{className:"text-4xl text-[#54451b] ",children:"Hi there, I'm"}),X.jsx("br",{}),X.jsx("h1",{className:"text-4xl top-100 font-bold text-size-xs",children:X.jsx(Gb,{sequence:["Andrea",1e3],speed:{type:"keyStrokeDelayInMs",value:250},style:{fontSize:"3em"},repeat:1/0})}),X.jsx("h2",{className:"mt-4 text-[#54451b] text-2xl",children:"IT girl Tech 😁"}),X.jsx("button",{className:`mt-6 px-4 py-2 bg-[#54451b] text-[#f1e7d8] rounded-lg font-semibold \r
           hover:bg-[#2b3f55] transition duration-300 ease-in-out`,children:X.jsx("a",{href:"#projects",children:"View projects"})}),X.jsx("button",{className:`mt-6 ml-4 px-4 py-2 bg-[#54451b] text-[#f1e7d8] rounded-lg font-semibold \r
           hover:bg-[#2b3f55] transition duration-300 ease-in-out`,children:X.jsx("a",{href:"mailto:belen.bjacho@gmail.com",children:"Contact me"})})]})}),kb=()=>X.jsx("section",{id:"about",className:`min-h-screen flex items-center justify-center  
       bottom-0 left-0 w-full

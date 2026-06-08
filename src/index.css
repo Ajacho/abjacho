@@ -7,10 +7,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: "mono", monospace;
-
   background-color: #864a09;
-
-  color: #f1e7d8;
+  /* background: url('/llama_bg.png');   */
+  /* color: #f1e7d8; */
 }
 
 list {

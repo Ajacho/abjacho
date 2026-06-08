@@ -29,11 +29,11 @@ export const NavBar = () => {
 
   return (
     <section id="navbar">
-      <nav className="fixed top-0 left-0 z-50 w-full shadow-md bg-transparent backdrop-blur-lg stroke-black/80 text-yellow-400">
+      <nav className="fixed top-0 left-0 z-50 w-full shadow-md bg-[#864a09] backdrop-blur-lg stroke-black/80 text-yellow-400">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           <a
             href="#"
-            className="text-2xl font-bold hover:text-yellow-400 text-lg px-2 py-1 rounded-lg transition-colors duration-300"
+            className="text-2xl font-bold hover:text-[#f1e7d8] text-lg px-2 py-1 rounded-lg transition duration-300 ease-in-out"
           >
             Andrea B Jacho
           </a>
@@ -43,7 +43,7 @@ export const NavBar = () => {
             {desktopNavItems.map((item) => (
               <li
                 key={item}
-                className="hover:text-yellow-400 transition-colors duration-300 text-base"
+                className="hover:text-[#f1e7d8] transition-colors duration-300 text-base"
               >
                 <Link
                   to={item.toLowerCase()}
@@ -56,11 +56,11 @@ export const NavBar = () => {
               </li>
             ))}
           </ul>
-          <ul className="text-white flex gap-4">
+          <ul className="text-white flex gap-4 ">
             {mobileNavItems.map((item) => (
               <li
                 key={item.name}
-                className="list-none hover:text-yellow-400 transition-colors duration-300"
+                className="list-none"
               >
                 <a
                   href={item.link}

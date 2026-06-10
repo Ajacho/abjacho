@@ -9,7 +9,7 @@ export const Experience = () => {
   const jobExperience = [
     {
       id: 0.1,
-      jobTitle: "PC Deployment Technician",
+      jobTitle: "IT Support Specialist",
       company: "TekSystems",
       duration: "Aug 2025 - present",
       location: "Salem, OR",

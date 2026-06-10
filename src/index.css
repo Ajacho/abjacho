@@ -7,9 +7,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: "mono", monospace;
-  background-color: #864a09;
+  /* background-color: #001C32; */
+  background: linear-gradient(135deg, #001C32, #1B3561 );
+  /* bg-gradient-to-b from-[#001C32] to-[#1B3561] */
   /* background: url('/llama_bg.png');   */
-  /* color: #f1e7d8; */
+  color: #f1e7d8;
 }
 
 list {
@@ -19,4 +21,34 @@ list {
 li {
   /* remove style */
   list-style-type: none;
+}
+
+/* Floating leaves*/
+.leaf {
+  position: absolute;
+  font-size: 24px;
+  animation: drift 12s linear infinite;
+}
+
+.leaf1 {
+  left: 20%;
+}
+
+.leaf2{
+  left: 60%;
+  animation-delay: 4s;
+}
+
+.leaf3{
+  left:80%;
+  animation-delay: 8s;
+}
+
+@keyframes  drift {
+  from {
+    transform: translateY(-100PX) translateX(0);
+  }
+  to {
+    transform: translateY(110vh) translateX(150px) rotate(360deg);
+  }
 }

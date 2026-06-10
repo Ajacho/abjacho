@@ -7,15 +7,20 @@ export const Landing = () => {
       id="land
       ing"
       className="min-h-screen flex items-start justify-center text-[#2b3f55]
-  bg-[url('/llama_bg.png')] bg-cover bg-left-top bg-no-repeat
-  md:bg-center md:bg-fixed
+  
   relative
 "
     >
-      <div className="max-w-4xl mx-auto px-6 pt-30 ">
+      <div className="max-w-4xl mx-auto px-6 pt-40">
+
+  <div className="leaf leaf1">🍃</div>
+  <div className="leaf leaf2">🍃</div>
+  <div className="leaf leaf3">🍃</div>
+
+
         <h2 className="text-2xl text-[#54451b] ">Hi there, I'm</h2>
         <br />
-        <h1 className="text-4xl top-100 font-bold text-size-xs">
+        <h1 className="text-4xl top-100 font-bold">
           <TypeAnimation
             sequence={["Andrea", 1000]}
             speed={{ type: "keyStrokeDelayInMs", value: 250 }}

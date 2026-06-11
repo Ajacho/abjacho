@@ -33,7 +33,7 @@ export const NavBar = () => {
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           <a
             href="#"
-            className="text-2xl font-bold hover:text-[#f1e7d8] text-lg px-2 py-1 rounded-lg transition duration-300 ease-in-out"
+            className="text-2xl font-bold hover:text-[#4cc68b] text-lg px-2 py-1 rounded-lg transition duration-300 ease-in-out"
           >
             Andrea B Jacho
           </a>
@@ -43,7 +43,7 @@ export const NavBar = () => {
             {desktopNavItems.map((item) => (
               <li
                 key={item}
-                className="hover:text-[#f1e7d8] transition-colors duration-300 text-base"
+                className="hover:text-[#4cc68b] transition-colors duration-300 text-base"
               >
                 <Link
                   to={item.toLowerCase()}
@@ -68,7 +68,7 @@ export const NavBar = () => {
                   rel="noopener noreferrer"
                 >
                   {/* change icon color */}
-                  <item.icon className="inline-block w-6 h-6 mr-2 text-yellow-400" />
+                  <item.icon className="inline-block w-6 h-6 mr-2 text-yellow-400 hover:text-[#4cc68b]" />
                 </a>
               </li>
             ))}

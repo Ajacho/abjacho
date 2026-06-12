@@ -12,28 +12,29 @@ export const About = () => {
         className="max-w-4xl mx-auto px-6 py-20
       "
       >
+
+  <div className="leaf leaf1">🍃</div>
+  <div className="leaf leaf2">🍃</div>
+  <div className="leaf leaf3">🍃</div>
         <h1
           className="text-4xl font-bold text-[#f1e7d8] italic [background:linear-gradient(180deg,transparent_55%,#864a09_55%)]
         bg-[length:100%_200%] bg-left-bottom animate-gradient"
         >
           About Me
-          {/* <TypeAnimation
-            sequence={["About Me", 1000]}
-            speed={{ type: "keyStrokeDelayInMs", value: 250 }}
-            repeat={Infinity}
-          /> */}
         </h1>
+
+      
 
         <div className="transition-all duration-300 my-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             {/* col-1 */}
             <div className="hidden md:flex flex flex-col items-center justify-top mt-10 ">
               {/* Picture of me */}
-              <div className="about-image border-4 border-yellow-400 rounded-full p-1 mb-6 transition-all duration-300 hover:shadow-lg hover:shadow-yellow-400">
+              <div className="p-1 mb-6 transition-all">
                 <img
-                  src="./andrea.jpg"
+                  src="./me.jpg"
                   alt="Andrea Jacho"
-                  className="rounded-full transition-all size-70"
+                  className=" transition-all size-60 w-full rounded-xl object-cover"
                 />
               </div>
 
@@ -44,10 +45,10 @@ export const About = () => {
             {/* col-2 */}
             <div className="max-w-4xl mx-auto px-6 mb-10">
               <p className="mt-4">
-                Information Technology Support Specialist at Salem Health Hospital by day, UX and
+                IT Support Specialist at Salem Health Hospital by day, UX and
                 web dev enthusiast always. CS grad from{" "}
                 <a
-                  className="text-yellow-400 font-bold underline decoration-transparent transition duration-300 ease-in-out hover:decoration-inherit hover:text-blue-400"
+                  className="text-yellow-400 font-bold underline decoration-transparent transition duration-300 ease-in-out hover:decoration-inherit hover:text-[#4cc68b]"
                   href="https://wou.edu/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -66,16 +67,16 @@ export const About = () => {
 
               <list className="list-disc list-inside mt-4">
                 <li className="mb-4">
-                  <CheckCheck className="text-yellow-400 inline-block mr-2" />
-                  JavaScript (ES6+), React, Node.js
+                  {/* <CheckCheck className="text-yellow-400 inline-block mr-2" /> */}
+                  • React, JavaScript (ES6+), Node.js, Vite
                 </li>
                 <li className="mb-4">
-                  <CheckCheck className="text-yellow-400 inline-block mr-2" />
-                  Bootstrap, CSS3, Tailwind CSS
+                  {/* <CheckCheck className="text-yellow-400 inline-block mr-2" /> */}
+                  • Bootstrap, CSS3, Tailwind CSS
                 </li>
                 <li className="mb-4">
-                  <CheckCheck className="text-yellow-400 inline-block mr-2" />
-                  Windows 11, Windows CLI, AD, LWS reconfiguration
+                  {/* <CheckCheck className="text-yellow-400 inline-block mr-2" /> */}
+                  • Windows 11, PowerShell, Active Directory, SCCM, LWS
                 </li>
               </list>
 
@@ -95,7 +96,7 @@ export const About = () => {
                     When I'm not coding, I'm shooting landscapes. Catch my shots
                     on{" "}
                     <a
-                      className="text-yellow-400 font-bold underline decoration-transparent transition duration-300 ease-in-out hover:decoration-inherit hover:text-blue-400"
+                      className="text-yellow-400 font-bold underline decoration-transparent transition duration-300 ease-in-out hover:decoration-inherit hover:text-[#4cc68b]"
                       href="https://www.pinterest.com/abjacho"
                       target="_blank"
                       rel="noopener noreferrer"

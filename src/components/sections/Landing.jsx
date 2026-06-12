@@ -17,7 +17,6 @@ export const Landing = () => {
   <div className="leaf leaf2">🍃</div>
   <div className="leaf leaf3">🍃</div>
 
-
         <h2 className="text-2xl text-[#f1e7d8] ">Hi there, I'm</h2>
         <br />
         <h1 className="text-4xl top-100 font-bold text-yellow-400">

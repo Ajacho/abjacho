@@ -46,10 +46,19 @@ export const Projects = () => {
       desc: "This is a classic 2D endless runner game with obstacles. Would you be able to reach max score?",
       collaborator: {
         name: "Kyle Blair",
-        url: "https://kyleblair.azurewebsites.net/"
+        url: "https://kyleblair.azurewebsites.net/",
       },
       githubLink: null,
-      liveLink: "https://microstudio.io/Magyk231/kaboom/"
+      liveLink: "https://microstudio.io/Magyk231/kaboom/",
+    },
+    {
+      id: 5,
+      src: "./CompuApp",
+      alt: "Computer IT learning app",
+      title: "CompuApp",
+      desc: "This is an IT commands learning app. It is a simple app that teaches basic IT commands and concepts.",
+      githubLink: "https://ajacho.github.io/cmd-compu-app/",
+      liveLink: null,
     }
   ];
 
@@ -59,17 +68,16 @@ export const Projects = () => {
       className="min-h-screen flex items-center justify-center"
     >
       <div className="max-w-4xl mx-auto px-6 py-20">
+        <div className="leaf leaf1">🍃</div>
+        <div className="leaf leaf2">🍃</div>
+        <div className="leaf leaf3">🍃</div>
+        <div className="leaf leaf4">🍃</div>
         <h1
           className="text-4xl font-bold text-[#f1e7d8] italic 
           [background:linear-gradient(180deg,transparent_55%,#4c2f20_55%)]
         bg-[length:100%_200%] bg-left-bottom animate-gradient"
         >
           Projects
-          {/* <TypeAnimation
-            sequence={["Project Showcase", 1000]}
-            speed={{ type: "keyStrokeDelayInMs", value: 250 }}
-            repeat={Infinity}
-          /> */}
         </h1>
 
         <div className="pt-10">
@@ -91,7 +99,7 @@ export const Projects = () => {
                       target="_blank"
                       className="text-sm text-[#2b3f55] font-bold underline 
                     decoration-transparent transition duration-300 ease-in-out
-                     hover:decoration-inherit hover:text-blue-400"
+                     hover:decoration-inherit hover:text-[#4cc68b]"
                       rel="noopener noreferrer"
                     >
                       View on GitHub ↗
@@ -113,55 +121,56 @@ export const Projects = () => {
             </div>
 
             {/* Small projects */}
-            {spotlightProjects.slice(1, 4).map((project) => (
+            {spotlightProjects.slice(1, 5).map((project) => (
               <div key={project.id} className="bg-[#f1e7d8] rounded-2xl p-6">
                 <h3 className="text-[#4c2f20] font-semibold">
                   {project.title}
                 </h3>
                 <p className="text-sm mt-2 text-[#4c2f20]">{project.desc}</p>
 
-          <footer className="mt-4">
-            {project.githubLink ? (
-              <a
-                href={project.githubLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm text-[#2b3f55] font-bold underline
+                <footer className="mt-4">
+                  {project.githubLink ? (
+                    <a
+                      href={project.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-[#2b3f55] font-bold underline
                 decoration-transparent transition duration-300 ease-in-out
-                hover:decoration-inherit hover:text-blue-400"
-              >
-                View on GitHub ↗
-              </a>
-            ) : (
-              <>
-                <a
-                  href={project.liveLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-[#2b3f55] font-bold underline
+                hover:decoration-inherit hover:text-[#4cc68b]"
+                    >
+                      View on GitHub ↗
+                    </a>
+                  ) : (
+                    <>
+                      <a
+                        href={project.liveLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm text-[#2b3f55] font-bold underline
                   decoration-transparent transition duration-300 ease-in-out
-                  hover:decoration-inherit hover:text-blue-400"
-                >
-                  View Live ↗
-                </a>             
-                
-                {project.collaborator && (
-                  
-                  <a
-                    href={project.collaborator.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="ml-0 text-sm text-[#2b3f55] font-bold underline
+                  hover:decoration-inherit hover:text-[#4cc68b]"
+                      >
+                        View Live ↗
+                      </a>
+
+                      {project.collaborator && (
+                        <a
+                          href={project.collaborator.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="ml-0 text-sm text-[#2b3f55] font-bold underline
                     decoration-transparent transition duration-300 ease-in-out
-                    hover:decoration-inherit hover:text-blue-400"
-                  >
-                    <h4 className="text-[#4c2f20] font-semibold ml-0 m-4">Collaborator:</h4>
-                    👤 Kyle Blair ↗
-                  </a>
-                )}
-              </>
-            )}
-          </footer>
+                    hover:decoration-inherit hover:text-[#4cc68b]"
+                        >
+                          <h4 className="text-[#4c2f20] font-semibold ml-0 m-4">
+                            Collaborator:
+                          </h4>
+                          👤 Kyle Blair ↗
+                        </a>
+                      )}
+                    </>
+                  )}
+                </footer>
               </div>
             ))}
           </div>

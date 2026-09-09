@@ -21,7 +21,7 @@ export const Experience = () => {
       shortDesc:
         "Images, configures, and deploys workstations enterprise-wide. Reconfigures LWS post-hardware swap using Citrix Workspace and tracks deployment progress through service tickets.",
       keySkills:
-        "SCCM, MDT, Active Directory, Citrix Workspace, Powershell, Windows Imaging 11",
+        "SCCM, MDT, Active Directory, Citrix Workspace, Powershell, Windows Imaging 11, IT asset management, technical documentation",
     },
     {
       id: 0.2,
@@ -98,23 +98,22 @@ export const Experience = () => {
       className="min-h-screen flex items-center justify-center "
     >
       <div className="max-w-4xl mx-auto px-6 py-20">
+        <div className="leaf leaf1">🍃</div>
+        <div className="leaf leaf2">🍃</div>
+        <div className="leaf leaf3">🍃</div>
+        <div className="leaf leaf4">🍃</div>
         <h1
           className="text-4xl font-bold text-[#f1e7d8] italic 
           [background:linear-gradient(180deg,transparent_55%,#4c2f20_55%)]
         bg-[length:100%_200%] bg-left-bottom animate-gradient"
         >
-            My Career Journey
-          {/* <TypeAnimation
-            sequence={["My Career Journey ", 1000]}
-            speed={{ type: "keyStrokeDelayInMs", value: 250 }}
-            repeat={Infinity}
-          /> */}
+          My Career Journey
         </h1>
 
         {/* Journey Map */}
 
         <div className="max-w-4xl mx-auto py-10">
-          <div className="relative ">
+          <div className="relative w-full ">
             {/* Center Line */}
             <div className="absolute left-1/2 top-0 h-full w-1 bg-[#4c2f20] transform -translate-x-1/2"></div>
 
@@ -154,13 +153,6 @@ export const Experience = () => {
             ))}
           </div>
         </div>
-
-
-
-
-
-
-
       </div>
     </section>
   );

@@ -8,14 +8,17 @@ export const About = () => {
       className="min-h-screen flex items-center justify-center  
       bottom-0 left-0 w-full"
     >
+
+
       <div
         className="max-w-4xl mx-auto px-6 py-20
       "
       >
+      <div className="leaf leaf1">🍃</div>
+      <div className="leaf leaf2">🍃</div>
+      <div className="leaf leaf3">🍃</div>
+      <div className="leaf leaf4">🍃</div>
 
-  <div className="leaf leaf1">🍃</div>
-  <div className="leaf leaf2">🍃</div>
-  <div className="leaf leaf3">🍃</div>
         <h1
           className="text-4xl font-bold text-[#f1e7d8] italic [background:linear-gradient(180deg,transparent_55%,#864a09_55%)]
         bg-[length:100%_200%] bg-left-bottom animate-gradient"
@@ -111,6 +114,7 @@ export const About = () => {
           </div>
         </div>
       </div>
+
     </section>
   );
 };

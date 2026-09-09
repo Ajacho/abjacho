@@ -35,18 +35,23 @@ li {
 }
 
 .leaf2{
-  left: 60%;
-  animation-delay: 4s;
+  left: 40%;
+  animation-delay: 1s;
 }
 
 .leaf3{
+  left:60%;
+  animation-delay: 3s;
+}
+
+.leaf4{
   left:80%;
-  animation-delay: 8s;
+  animation-delay: 5s;
 }
 
 @keyframes  drift {
   from {
-    transform: translateY(-100PX) translateX(0);
+    transform: translateY(0) translateX(0);
   }
   to {
     transform: translateY(110vh) translateX(150px) rotate(360deg);
